@@ -109,11 +109,7 @@ public class CON_Email_BATCH implements Database.Batchable<sObject>,Database.Sta
             mail.setToAddresses(toAddresses);        
             mail.setSubject(label.stgPreferredEmailBatchEmailSubject + ' ' + a.Status);
             mail.setPlainTextBody(emailBody);
-
-            //Prevent sending email in the unit test
-            if(!Test.isRunningTest()) {
-                Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
-            }
+            Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
         }
 
 	}

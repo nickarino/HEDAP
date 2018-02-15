@@ -39,6 +39,18 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
     //Get the primary affiliation fields defined in the Affiliation Mappings
     public static AFFL_MultiRecordTypeMapper afflMapper = new AFFL_MultiRecordTypeMapper();
 
+    /*******************************************************************************************************
+    * @description Static flag to prevent CON_PrimaryAffls_TDTM from creating a new Affiliations when an existing
+    * Affiliation is made primary.
+    ********************************************************************************************************/
+    public static Boolean afflMadePrimary = false;
+
+	/*******************************************************************************************************
+    * @description Static flags to prevent recursive call.
+    ********************************************************************************************************/
+    public static boolean afflMultiHasRunBefore = false;
+	public static boolean afflMultiHasRunAfter = false;
+
 	/*******************************************************************************************************
     * @description Handles Affiliation management.
     * @param listNew the list of Accounts from trigger new.
@@ -52,9 +64,8 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
 
     	 DmlWrapper dmlWrapper = new DmlWrapper();
 		 List<Affiliation__c> afflsMadePrimary = new List<Affiliation__c>();
-		 if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_Before_Insert)
-		 	|| !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Update)
-		 	|| !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Insert)) {
+
+		 if(!afflMultiHasRunBefore) {
 
 			 //Query all the primary affiliation lookup fields on the contact - they are not available in the trigger.
 			 Map<ID, Contact> relatedContactsMap;
@@ -75,22 +86,22 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
 
 		            //BEFORE INSERT - we do it in the Before so we don't get the affiliation we just created when we query for
 		            //affls of the same type.
-		            if (triggerAction == TDTM_Runnable.Action.BeforeInsert && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_Before_Insert)) {
+		            if (triggerAction == TDTM_Runnable.Action.BeforeInsert) {
 		                if (affl.Primary__c && affl.Contact__c != null && affl.Account__c != null) {
 		            	    afflsMadePrimary.add(affl);
-            				TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_afflMadePrimary, true);
+		            	    afflMadePrimary = true;
 		            	    populateKeyAffls(affl, lookupFieldName, relatedContact, dmlWrapper);
 		                }
 		            }
 
 		            // AFTER UPDATE
-		            if (triggerAction == TDTM_Runnable.Action.AfterUpdate && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Update)) {
+		            if (triggerAction == TDTM_Runnable.Action.AfterUpdate) {
 		                Affiliation__c afflOld = (Affiliation__c)oldlist[i];
 
 		                //If a primary affiliation is made nonprimary the key affiliation field on the contact needs to be cleared.
 		                if (afflOld.Primary__c && !affl.Primary__c && relatedContact.get(lookupFieldName) == affl.Account__c) {
 		                    UTIL_Debug.debug('****AFFL_MultiRecordType_TDTM - clearing field ' + lookupFieldName);
-		                	if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_PrimaryAffls_TDTM_keyAfflLookupUpdated)) {
+		                	if(CON_PrimaryAffls_TDTM.keyAfflLookupUpdated == false) {
 		                	     relatedContact.put(lookupFieldName, null);
 		                	     dmlWrapper.objectsToUpdate.add(relatedContact);
 		                	}
@@ -100,20 +111,12 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
 		                //an any other primary affiliation of the same type needs to be made non-primary.
 		                if (affl.Primary__c && !afflOld.Primary__c && affl.Contact__c != null && affl.Account__c != null) {
 	                        afflsMadePrimary.add(affl);
-            				TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_afflMadePrimary, true);
+	                        afflMadePrimary = true;
                             populateKeyAffls(affl, lookupFieldName, relatedContact, dmlWrapper);
 		                }
 		            }
 		        	i++;
 		    	 }
-		    	 if (triggerAction == TDTM_Runnable.Action.BeforeInsert)
-		    	 {
-	             	TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_Before_Insert, true);
-	             }else if (triggerAction == TDTM_Runnable.Action.AfterUpdate)
-	             {
-                    TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Update, true);
-
-	             }
 		    	 if(afflsMadePrimary.size() > 0) {
 		    	     uncheckOtherPrimariesSameType(afflsMadePrimary, dmlWrapper);
 		    	 }
@@ -133,37 +136,27 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
 		            }
 		    	 }
 	    	 }
+	    	 afflMultiHasRunBefore = true;
         }
 
         //AFTER INSERT
-        if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Insert) && triggerAction == TDTM_Runnable.Action.AfterInsert) {
+        if(!afflMultiHasRunAfter && triggerAction == TDTM_Runnable.Action.AfterInsert) {
 			 if(newlist != null && newlist.size() > 0) {
 		    	 for (SObject so : newlist) {
 		            Affiliation__c affl = (Affiliation__c)so;
 					createProgramEnrollmentIfNecessary(affl, dmlWrapper);
 		    	 }
 			 }
-           TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Insert, true);
+			 afflMultiHasRunAfter = true;
 		}
-		TDTM_TriggerHandler.processDML(dmlWrapper, true);
-        dmlWrapper = null;
-        if (triggerAction == TDTM_Runnable.Action.AfterInsert){
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Insert, false);
-        }else if (triggerAction == TDTM_Runnable.Action.BeforeInsert){
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_Before_Insert, false);
-			TDTM_ProcessControl.resetRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_afflMadePrimary);        	
-        }else if (triggerAction == TDTM_Runnable.Action.AfterUpdate){
-        	TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_After_Update, false);
-			TDTM_ProcessControl.resetRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_afflMadePrimary);        	
-        }
 
-    	return dmlWrapper;
+        return dmlWrapper;
     }
 
     public void processAfflDeleted(Affiliation__c afflOld, Contact relatedContact, String lookupFieldName, DmlWrapper dmlWrapper) {
         //If the affl is primary, and the lookup field of this type is pointing to the account that is part of the affl ==> clear the lookup
 	    if(afflOld.Primary__c && lookupFieldName != null && relatedContact.get(lookupFieldName) == afflOld.Account__c) {
-	        if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_PrimaryAffls_TDTM_keyAfflLookupUpdated)) {
+	        if(CON_PrimaryAffls_TDTM.keyAfflLookupUpdated == false) {
 	            relatedContact.put(lookupFieldName, null);
 	            dmlWrapper.objectsToUpdate.add(relatedContact);
 	        }
@@ -207,7 +200,7 @@ public class AFFL_MultiRecordType_TDTM extends TDTM_Runnable {
     private void populateKeyAffls(Affiliation__c affl, String lookupFieldName, Contact relatedContact, DmlWrapper dmlWrapper) {
         //If the reason why Affiliations have been made primary is that key affiliation fields on Contact have been populated,
         //we don't need to try populating them. In fact, this causes an error notification to be sent (W-009272).
-        if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_PrimaryAffls_TDTM_keyAfflLookupUpdated)) {
+        if(CON_PrimaryAffls_TDTM.keyAfflLookupUpdated == false) {
 	        //If we have a mapping, populate the lookup field defined in the mapping.
 	        if(!String.isBlank(lookupFieldName)) {
 	        	UTIL_Debug.debug('****MRT: populating lookup field ' + lookupFieldName + ' on contact');

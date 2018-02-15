@@ -5,7 +5,7 @@
       <list>
         <IlluminatedCloudConnection>
           <option name="connectionName" value="unmanaged-heda-dev-ed.lightning.force.com" />
-          <option name="defaultModuleName" value="hedap" />
+          <option name="defaultModuleName" value="hedap-fork" />
           <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" />
         </IlluminatedCloudConnection>
       </list>

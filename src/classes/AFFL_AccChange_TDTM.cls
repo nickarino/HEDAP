@@ -37,6 +37,11 @@
 public with sharing class AFFL_AccChange_TDTM extends TDTM_Runnable {
 
     /*******************************************************************************************************
+    * @description Static flags to prevent recursive call.
+    ********************************************************************************************************/
+    public static boolean afflAccChangeAlreadyRun = false;
+
+    /*******************************************************************************************************
     * @description Handles Affiliation management.
     * @param listNew the list of Accounts from trigger new.
     * @param listOld the list of Accounts from trigger old.
@@ -48,7 +53,8 @@ public with sharing class AFFL_AccChange_TDTM extends TDTM_Runnable {
     TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult) {
 
         DmlWrapper dmlWrapper = new DmlWrapper();
-        if(!TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_AccChange_TDTM)) {
+
+        if(!afflAccChangeAlreadyRun) {
 
             AFFL_MultiRecordType_TDTM afflMulti = new AFFL_MultiRecordType_TDTM();
             Map<ID, Contact> relatedContactsMap;
@@ -106,17 +112,11 @@ public with sharing class AFFL_AccChange_TDTM extends TDTM_Runnable {
                            relatedContact.put(lookupFieldNameOld, null);
                            dmlWrapper.objectsToUpdate.add(relatedContact);
                        }
-                       TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_AccChange_TDTM, true);
                    }
                    i++;
                }
            }
-        }
-        TDTM_TriggerHandler.processDML(dmlWrapper, true);
-        dmlWrapper = null;  
-        if(triggerAction == TDTM_Runnable.Action.AfterUpdate)
-        {      
-          TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_AccChange_TDTM, false);
+           afflAccChangeAlreadyRun = true;
         }
         return dmlWrapper;
     }

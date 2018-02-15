@@ -308,7 +308,6 @@ public with sharing class ADDR_AdminAcc_TEST {
         List<Address__c> listAddrOriginal = accsAddrs.addrs;
         
         // create additional addresses
-        ADDR_Addresses_TDTM.addressIdsInserted = new Set<Id>();
         List<Address__c> addrs = UTIL_UnitTestData_TEST.getMultipleTestAddresses(2);
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             addrs[i].Parent_Account__c = accsAddrs.accs[i].Id;
@@ -322,7 +321,6 @@ public with sharing class ADDR_AdminAcc_TEST {
         
         // go back to original default addresses
         // added this extra set to test fix where we didn't use the correct default
-        ADDR_Addresses_TDTM.addressIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             listAddrOriginal[i].Default_Address__c = true;
             listAddrOriginal[i].MailingStreet__c = 'Original Default Street' + i;
@@ -366,7 +364,6 @@ public with sharing class ADDR_AdminAcc_TEST {
         List<Address__c> addrs = accsAddrs.addrs;
         
         // modify some of the Account addresses directly
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = 'Direct Street Edit';
             accsAddrs.accs[i].BillingCity = 'Direct City Edit';
@@ -374,7 +371,6 @@ public with sharing class ADDR_AdminAcc_TEST {
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
         update accsAddrs.accs;
 
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = 'another Street Edit';
             accsAddrs.accs[i].BillingCity = 'another City Edit';
@@ -382,7 +378,6 @@ public with sharing class ADDR_AdminAcc_TEST {
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
         update accsAddrs.accs;
 
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = 'final Street Edit';
             accsAddrs.accs[i].BillingCity = 'final City Edit';
@@ -475,14 +470,12 @@ public with sharing class ADDR_AdminAcc_TEST {
             accsAddrs.accs[i].BillingStreet = 'Direct Street Edit';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         update accsAddrs.accs;
 
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingState = 'Washington';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();    
         update accsAddrs.accs;
 
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
@@ -490,10 +483,8 @@ public with sharing class ADDR_AdminAcc_TEST {
             accsAddrs.accs[i].BillingState = 'Oregon';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();    
         update accsAddrs.accs;
 
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();    
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = ' DIRECT STREET  EDIT ';  // only change casing.
         }
@@ -523,7 +514,6 @@ public with sharing class ADDR_AdminAcc_TEST {
             acc.BillingStreet = 'direct street  edit';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();    
         update accsAddrs.accs;
         
         // verify that the Account address
@@ -559,21 +549,18 @@ public with sharing class ADDR_AdminAcc_TEST {
         
         // modify some of the account addresses directly
         // NOTE: we only modify 1 field, so it will be treated as an update to an existing address!
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = 'Direct Street Edit';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
         update accsAddrs.accs;
 
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingState = 'Washington';
         }
         ADDR_Contact_TEST.turnOnAllAddrTriggers();
         update accsAddrs.accs;
 
-        ADDR_Account_TDTM.accountIdsUpdated = new Set<Id>();
         for (Integer i = 0; i < accsAddrs.accs.size(); i++) {
             accsAddrs.accs[i].BillingStreet = ' direct street  edit ';    // whitespace and casing should not count as real edit.
             accsAddrs.accs[i].BillingState = 'Oregon';

@@ -144,7 +144,7 @@ private class CON_Email_TEST {
         	contacts[0].WorkEmail__c = null;
         }
 
-        TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_Preferred_TDTM, false);
+	    CON_Preferred_TDTM.alreadyRunBefore = false; // need to re-activate the trigger
 
 		Test.startTest();
         update contacts;
@@ -197,11 +197,11 @@ private class CON_Email_TEST {
 				}
 	        }
 
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_Preferred_TDTM, true);
+	        CON_Preferred_TDTM.alreadyRunBefore = true; // need to turn off the trigger for this test
 	        update contacts;
         }
 
-        TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.CON_Preferred_TDTM, false);
+	    CON_Preferred_TDTM.alreadyRunBefore = false; // need to activate these for the batch
 		// Run Batch
 		Test.startTest();
 	    CON_Email_BATCH contbatch = new CON_Email_BATCH(null);

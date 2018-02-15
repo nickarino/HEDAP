@@ -1,25 +1,25 @@
-
-public with sharing class Nick_Temp {
+public with sharing class Nick_Temp
+{
 
     public String callCsv() {
 
         Contact[] contacts = new Contact[]{
-                new Contact(
-                        FirstName = 'John',
-                        LastName = 'Smith2',
-                        Birthdate = Date.newInstance(1985, 2, 3),
-                        Email = 'abc@def.com',
-                        Phone = '222 444 55555'
-                )
+        new Contact(
+        FirstName = 'John',
+        LastName = 'Smith2',
+        Birthdate = Date.newInstance(1985, 2, 3),
+        Email = 'abc@def.com',
+        Phone = '222 444 55555'
+        )
         };
 
         insert contacts;
 
         Blob txtBlob = Blob.valueOf(new Csv().generate(contacts)); //Convert it to a blob
         Attachment attach = new Attachment(); //Make an attachment
-        attach.Name = 'text.csv';
+        attach.Name ='text.csv';
         attach.Body = txtBlob;
-        attach.ContentType = 'text/csv'; //Signal what the file's MIME type is
+        attach.ContentType= 'text/csv'; //Signal what the file's MIME type is
         attach.ParentID = contacts[0].ID;
         insert attach;
         return '';

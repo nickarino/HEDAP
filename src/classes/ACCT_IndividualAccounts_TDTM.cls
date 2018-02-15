@@ -42,6 +42,31 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
     private static ID defaultRecTypeID = UTIL_CustomSettingsFacade.getSettings().Account_Processor__c;
 
     /*******************************************************************************************************
+    * @description Re-entrant Flag for After Insert
+    */
+    public static boolean alreadyRunAfterInsert = false;
+
+    /*******************************************************************************************************
+    * @description Re-entrant Flag for After Update
+    */
+    public static boolean alreadyRunAfterUpdate = false;
+
+    /*******************************************************************************************************
+    * @description Re-entrant Flag for After Delete
+    */
+    public static boolean alreadyRunAfterDelete = false;
+
+    /*******************************************************************************************************
+    * @description A method to disable all trigger actions for this trigger class
+    * @return void
+    */
+    public static void turnOff() {
+        alreadyRunAfterInsert = true;
+        alreadyRunAfterUpdate = true;
+        alreadyRunAfterDelete = true;
+    }
+
+    /*******************************************************************************************************
     * @description a set of languages that require different naming conventions
     */
     private static Set<String> EasternOrderLanguages = new Set<String>{
@@ -77,7 +102,6 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
         List<Contact> listContactNeedAccount = new List<Contact>();
         List<Contact> listContactNeedAccountUpdate = new List<Contact>();
         List<Contact> listContactAccountDelete = new List<Contact>();
-        List<Contact> listContactsChangedLastName = new List<Contact>();
 
         Map<Id,Id> mapAccountIdContactId = new Map<Id,Id>();
 
@@ -104,7 +128,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
         }
 
         // AFTER DELETE
-        if (triggerAction == TDTM_Runnable.Action.AfterDelete && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Delete)) {
+        if (triggerAction == TDTM_Runnable.Action.AfterDelete && !alreadyRunAfterDelete) {
             for (Contact c : oldContacts)
                 listContactAccountDelete.add(c);
         } else {
@@ -112,7 +136,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             for (Contact c : contacts) {
 
                 // AFTER INSERT
-                if (triggerAction == TDTM_Runnable.Action.AfterInsert && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert)) {
+                if (triggerAction == TDTM_Runnable.Action.AfterInsert && !alreadyRunAfterInsert) {
 
                 	// Account should be created if:
                     //    1. The account isn't set by the user
@@ -130,7 +154,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 	            }
 
                 // AFTER UPDATE
-                if (triggerAction == TDTM_Runnable.Action.AfterUpdate && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update)) {
+                if (triggerAction == TDTM_Runnable.Action.AfterUpdate && !alreadyRunAfterUpdate) {
                     // HH account should be created if:
 	                //   1. The account has been blanked out by the user
 	                //   2. The Account Model is not blank
@@ -154,13 +178,6 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
                     if (c.OwnerId != oldContacts[i].OwnerId) {
                     	mapContactIdContactOwnerChange.put(c.Id, c);
                     }
-
-                    // if the last name of contact has changed and it is using admin account model 
-                    // change the related admin account last name
-                    if (c.LastName != oldContacts[i].LastName && c.AccountId != null)
-                    {
-                        listContactsChangedLastName.add(c);
-                    }
                 }
                 i += 1;
             }
@@ -168,15 +185,15 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             // Must set flags after contact for loop to make sure all contacts are processed.
             if (triggerAction == TDTM_Runnable.Action.AfterInsert) {
                 // Set reentrant flag
-                TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert, true);
+                alreadyRunAfterInsert = true;
             }
             if (triggerAction == TDTM_Runnable.Action.AfterUpdate) {
                 // Set reentrant flag
-                TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update, true);
+                alreadyRunAfterUpdate = true;
             }
             if (triggerAction == TDTM_Runnable.Action.AfterDelete) {
                 // Set reentrant flag
-                TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Delete, true);
+                alreadyRunAfterDelete = true;
             }
         }
 
@@ -199,26 +216,14 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             updateParentAcc(listAccountIdHHToUpdate, dmlWrapper);
         }
         if (mapContactIdContactOwnerChange.size() > 0) {
-            updateOwners(mapContactIdContactOwnerChange, dmlWrapper);
+        	updateOwners(mapContactIdContactOwnerChange, dmlWrapper);
         }
         if (listContactAccountDelete.size() > 0) {
         	UTIL_Debug.debug('****Number of accs to delete: ' + listContactAccountDelete.size());
             // check all old accounts to delete is they are left hanging around
             deleteContactAccountsIfEmpty(listContactAccountDelete, dmlWrapper);
         }
-        if (listContactsChangedLastName.size() > 0) {
-            updateAccountsLastName(listContactsChangedLastName, dmlWrapper);
-        }
 
-        TDTM_TriggerHandler.processDML(dmlWrapper, true);
-        dmlWrapper = null;
-        if (triggerAction == TDTM_Runnable.Action.AfterInsert){
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert, false);
-        }else if (triggerAction == TDTM_Runnable.Action.AfterUpdate){
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update, false);
-        }else if (triggerAction == TDTM_Runnable.Action.AfterDelete){
-            TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Delete, false);            
-        }
     	return dmlWrapper;
     }
 
@@ -520,28 +525,5 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
     */
     public static String strNameAccountForContact(Contact con) {
         return con.LastName + ' ' + system.label.DefaultAccountName;
-    }
-
-    private void updateAccountsLastName(List<Contact> listContactsChangedLastName, DmlWrapper dmlWrapper) 
-    {
-        list<Account> listAccToUpdate = new list<Account>();
-        map<Id, Contact> mapAccIdToCon = new map<Id, Contact>();
-        for (Contact con : listContactsChangedLastName) {
-            mapAccIdToCon.put(con.AccountId, con);
-        }
-
-        list<Account> listAcc = [SELECT Id, RecordTypeId 
-                                 FROM Account
-                                 WHERE Id IN :mapAccIdToCon.keySet()];
-
-        for (Account acc : listAcc) {
-            // only consider Admin Accounts
-            if (acc.RecordTypeId == UTIL_Describe.getAdminAccRecTypeID()) {
-                acc.Name = strNameAdmAccountForContact(mapAccIdToCon.get(acc.Id));
-                listAccToUpdate.add(acc);
-            }
-        }
-        // add all accounts needing updating to our list
-        dmlWrapper.objectsToUpdate.addAll((List<SObject>)listAccToUpdate);
     }
 }

@@ -68,16 +68,9 @@ public class REL_Relationships_TDTM extends TDTM_Runnable {
         List<Relationship__c> relationshipsToUpdate = new List<Relationship__c>();
         List<Relationship__c> relationshipsToDelete = new List<Relationship__c>();
         List<Relationship__c> reciprocalsToUpdate = new List<Relationship__c>();
-
-        //Keeps track of relationships that have already been deleted to prevent Entity is Deleted error
-        Set<Id> hasBeenDeleted = new Set<Id>();
-
+        
         if (triggerAction == TDTM_Runnable.Action.afterUpdate) {
             hasRun = true;
-        }
-
-        if (triggerAction == TDTM_Runnable.Action.afterDelete) {
-            hasBeenDeleted.addAll((new Map<Id, Relationship__c>(newList)).keySet());
         }
         
         Integer i = 0;          // processing counter            
@@ -106,7 +99,7 @@ public class REL_Relationships_TDTM extends TDTM_Runnable {
 
             // AFTER DELETE
             if (triggerAction == TDTM_Runnable.Action.afterDelete) {
-                if (r.ReciprocalRelationship__c != null && !hasBeenDeleted.contains(r.ReciprocalRelationship__c)) {
+                if (r.ReciprocalRelationship__c != null) {
                     relationshipsToDelete.add(r);
                 }
             }

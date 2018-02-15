@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hedap.iml" filepath="$PROJECT_DIR$/hedap.iml" />
+      <module fileurl="file://~/devHelp/salesforce/hedap-fork/hedap-fork.iml" filepath="~/devHelp/salesforce/hedap-fork/hedap-fork.iml" />
     </modules>
   </component>
 </project>

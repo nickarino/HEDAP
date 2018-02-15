@@ -46,9 +46,7 @@ private class ACCT_IndividualAccounts_TEST {
             new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         // turn off all TDTM triggers for this component
-        TDTM_ProcessControl.turnOffRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert);
-        TDTM_ProcessControl.turnOffRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update);
-        TDTM_ProcessControl.turnOffRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Delete);               
+        ACCT_IndividualAccounts_TDTM.turnOff();
 
         Contact con = new Contact(
             FirstName='Test',
@@ -159,7 +157,7 @@ private class ACCT_IndividualAccounts_TEST {
         Contact con2 = new Contact(FirstName='John', LastName='Smith', AccountId = accountId);
 
         Test.startTest();
-        TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.AFFL_MultiRecordType_TDTM_Before_Insert, false);
+        AFFL_MultiRecordType_TDTM.afflMultiHasRunBefore = false;
         insert con2;
         Test.stopTest();
 
@@ -203,8 +201,6 @@ private class ACCT_IndividualAccounts_TEST {
 
     /*********************************************************************************************************
     * @description Update a contact's Lastname in the Account
-    * Based on lastest requirement, if there is a change on contact's last name, 
-    * admin account's lastname should be changed accordingly. 
     */
     @isTest
     public static void contactInNormalOrgNameChangem() {
@@ -235,7 +231,7 @@ private class ACCT_IndividualAccounts_TEST {
         update con2;
 
         Contact[] updatedContacts = [Select Account.Name, AccountId from Contact where id=:con.id];
-        system.assertEquals(con2.LastName + ' ' + Label.DefaultAdminName, updatedContacts[0].Account.Name);
+        system.assertEquals(acctName,updatedContacts[0].Account.Name);
     }
 
     /*********************************************************************************************************
