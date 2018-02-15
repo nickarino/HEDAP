@@ -48,13 +48,17 @@ public class TDTM_Manager {
 
     /*******************************************************************************************************
     * @description Constructor. Sets namespace, packageHandlers, and packageTokens default properties.
-    * @parameter nm A String representing the namespace to query from.
+    * @param nm A String representing the namespace to query from.
     *********************************************************************************************************/
 	public TDTM_Manager(String nm) {
 		this.namespace = nm;
 
         // Get all handlers from database.
+<<<<<<< HEAD
 		this.allHandlers = new Map<Id,Trigger_Handler__c>([SELECT Id, Active__c,  Asynchronous__c,  Object__c,  Load_Order__c,  Class__c,  Trigger_Action__c,  User_Managed__c, Owned_by_Namespace__c FROM Trigger_Handler__c ORDER BY Load_Order__c LIMIT 5000]);
+=======
+		this.allHandlers = new Map<Id,Trigger_Handler__c>([SELECT Id, Active__c,  Asynchronous__c,  Object__c,  Load_Order__c,  Class__c,  Trigger_Action__c,  User_Managed__c, Owned_by_Namespace__c, Filter_Field__c, Filter_Value__c, Usernames_to_Exclude__c FROM Trigger_Handler__c ORDER BY Load_Order__c LIMIT 5000]);
+>>>>>>> remotes/b/master
         this.allTokens = getTokenSet(this.allHandlers);
 
         // Isolate the current handlers by namespace
@@ -70,7 +74,7 @@ public class TDTM_Manager {
     /*******************************************************************************************************
     * @description Update the existing Trigger Handlers in the database. Will also delete Handlers not
     * included in the default configuration.
-    * @parameter newTokenSet A set of TDTM Tokens that represent a new configuration to compare to existing
+    * @param newTokenSet A set of TDTM Tokens that represent a new configuration to compare to existing
     * @return void
     *********************************************************************************************************/
 	public void updateDefaultTdtmConfig(Set<TDTM_Global_API.TdtmToken> newTokenSet) {
@@ -140,7 +144,7 @@ public class TDTM_Manager {
 
     /*******************************************************************************************************
     * @description Create an Set of TDTM Tokens
-    * @parameter hs A Map of TDTM trigger handlers representing a new default configuration.
+    * @param hs A Map of TDTM trigger handlers representing a new default configuration.
     * @return A set of TDTM Tokens from the Trigger handlers that were passed in.
     *********************************************************************************************************/
 	public Set<TDTM_Global_API.TdtmToken> getTokenSet(Map<Id,Trigger_Handler__c> hs) {
@@ -148,7 +152,11 @@ public class TDTM_Manager {
 
 		for( Trigger_Handler__c h: hs.values() ) {
 
+<<<<<<< HEAD
 			TDTM_Global_API.TdtmToken newToken = new TDTM_Global_API.TdtmToken( h.Class__c, h.Object__c, h.Trigger_Action__c, h.Load_Order__c, h.Active__c, h.Asynchronous__c, null, null, h.User_Managed__c, h.Owned_by_Namespace__c);
+=======
+			TDTM_Global_API.TdtmToken newToken = new TDTM_Global_API.TdtmToken( h.Class__c, h.Object__c, h.Trigger_Action__c, h.Load_Order__c, h.Active__c, h.Asynchronous__c, h.Filter_Field__c, h.Filter_Value__c, h.User_Managed__c, h.Owned_by_Namespace__c, h.Usernames_to_Exclude__c);
+>>>>>>> remotes/b/master
 
 			// Conditionally set Id
 			if(h.Id != null) {
@@ -170,6 +178,7 @@ public class TDTM_Manager {
         h.Asynchronous__c = t.async;
         h.User_Managed__c = t.userManaged;
         h.Owned_by_Namespace__c = t.ownedByNamespace;
+        h.Usernames_to_Exclude__c = t.usernamesToExclude;
 
         if(t.handlerId == null) {
 			h.Class__c = t.className;
