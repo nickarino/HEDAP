@@ -63,3 +63,21 @@ else
     printf "\nOk, we will not merge the change(s) at this time. Bye.\n"
     exit
 fi
+
+# If you do bring it in, you can add it under a separate module or directly into your main module's classes directory.
+# You don't need an al subdirectory, though. I think what you're trying to do with that is simulate it being in a namespace,
+# but the only way that custom code can currently be in a namespace is if it's from an installed managed package.
+
+#cd ~/devHelp/salesforce/hedap-fork/src/classes
+#
+#
+#if [ -d "~/devHelp/salesforce/common/"];
+#then
+#     cd ~/devHelp/salesforce/common/
+#     env -i git pull
+#else
+#     mkdir cd ~/devHelp/salesforce/common/
+#     cd cd ~/devHelp/salesforce/common/
+#     env -i git clone https://github.com/apex-commons/SoqlBuilder.git
+#     env -i git clone https://github.com/apex-commons/StringUtils.git
+#fi
