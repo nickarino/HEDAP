@@ -2,64 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/hedap_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/illuminatedCloud.xml" afterPath="$PROJECT_DIR$/.idea/illuminatedCloud.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" afterPath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Addr/STG_CMP_Addr.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Addr/STG_CMP_Addr.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Affl/STG_CMP_Affl.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Affl/STG_CMP_Affl.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Container/STG_CMP_Container.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Container/STG_CMP_Container.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_CourseConnections/STG_CMP_CourseConnections.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_CourseConnections/STG_CMP_CourseConnections.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Courses/STG_CMP_Courses.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Courses/STG_CMP_Courses.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Header/STG_CMP_Header.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Header/STG_CMP_Header.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Rel/STG_CMP_Rel.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Rel/STG_CMP_Rel.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_CannotDelete_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_CannotDelete_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Account_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Account_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Addresses_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Addresses_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_AdminAcc_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_AdminAcc_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Contact_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Contact_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Contact_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Contact_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Seasonal_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Seasonal_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccChange_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccChange_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_ContactAccChange_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_ContactAccChange_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_ContactChange_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_ContactChange_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_MultiRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_MultiRecordType_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CCON_ConnectionBackfill_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CCON_ConnectionBackfill_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CCON_Faculty_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CCON_Faculty_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email_BATCH.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_EthnicityRace_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/CON_EthnicityRace_BATCH.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Preferred_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Preferred_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Preferred_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Preferred_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_PrimaryAffls_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/CON_PrimaryAffls_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/COUR_DescriptionCopy_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/COUR_DescriptionCopy_BATCH.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ERR_Notifier.cls" afterPath="$PROJECT_DIR$/src/classes/ERR_Notifier.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Nick_Temp.cls" afterPath="$PROJECT_DIR$/src/classes/Nick_Temp.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_Con_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_Con_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/STG_InstallScript_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/STG_InstallScript_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_DefaultConfig.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_DefaultConfig.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/THAN_Filter_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/THAN_Filter_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_UnitTestData_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_UnitTestData_TEST.cls" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,6 +12,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="merge-with-HEDAP-foundation.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,11 +78,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,6 +90,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.110497236" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,15 +202,18 @@
       <option name="presentableId" value="Default" />
       <updated>1518729547735</updated>
       <workItem from="1518729551077" duration="69000" />
-      <workItem from="1518729622142" duration="233000" />
+      <workItem from="1518729622142" duration="972000" />
+      <workItem from="1518730765129" duration="362000" />
+      <workItem from="1518885609714" duration="518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302000" />
+    <option name="totallyTimeSpent" value="1921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -293,6 +257,39 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip!/ACCT_IndividualAccounts_TDTM.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ArquillianSettingsConfigurable.UI">
@@ -301,6 +298,77 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.110497236" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Illuminated Cloud</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.110497236" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>hedap-fork</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.110497236" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.110497236" />
               </list>
             </option>
           </splitter-proportions>
