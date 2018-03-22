@@ -63,7 +63,7 @@ public class CON_Email {
                 // Catch a special case when there is a value in Email that doesn't match the 
                 // other fields and Preferred Email is blank
                 if(String.isNotBlank(contact.Email) && emailFields.valueExists(contact.Email) == null && String.isBlank(contact.Preferred_Email__c)) {
-                    contact.Preferred_Email__c = 'Email (standard)';
+                    contact.Preferred_Email__c = Label.preferredBatchDefaultEmail;
                 }
 
                 // Process when Email matches an existing value
@@ -87,16 +87,15 @@ public class CON_Email {
                 contact.Preferred_Email__c = emailFields.valuedFields[0].prefLabel;
                 contact.Email = emailFields.valuedFields[0].value;
 
-            // Enforce preferred email field unless validation is disabled
+                // Enforce preferred email field unless validation is disabled
             } else if(validatePreferred && String.isBlank(contact.Preferred_Email__c)){
 
                 contact.addError( Label.PreferredEmailRequiredError );
 
-            // Make Sure preferred isn't blank making an exception for a special case to prevent errors.
-            } else if ( String.isNotBlank(contact.Preferred_Email__c) && contact.Preferred_Email__c != 'Email (standard)' && contact.Preferred_Email__c != 'Email' ) {
+                // Make Sure preferred isn't blank making an exception for a special case to prevent errors.
+            } else if ( String.isNotBlank(contact.Preferred_Email__c) && contact.Preferred_Email__c != Label.preferredBatchDefaultEmail && contact.Preferred_Email__c != emailFields.emailLabel ) {
 
                 CON_EmailField field = emailFields.getFieldByPrefLabel(contact.Preferred_Email__c);
-
                 if( field != null) {
                     // Make sure we are not setting to a blank value
                     if(String.isNotBlank(field.value)) {
@@ -106,7 +105,7 @@ public class CON_Email {
                         contact.addError(Label.PreferredEmailMatchNotNull);
                     }
 
-                // Make sure the value in Preferred email matches an actual field 
+                    // Make sure the value in Preferred email matches an actual field
                 } else {
                     contact.addError(Label.PreferredEmailMatchMustExist);
                 }
@@ -171,15 +170,27 @@ public class CON_Email {
 
         private List<CON_EmailField> allFields {get;set;}
         private List<CON_EmailField> valuedFields {get;set;}
+        public String emailLabel {get;set;}
 
         public CON_EmailFieldList(Contact contact) {
 
             this.allFields = new List<CON_EmailField>();
             this.valuedFields = new List<CON_EmailField>();
             Map<String, Schema.DescribeFieldResult> fieldMap = UTIL_Describe.getFieldsOfType('Contact', 'EMAIL');
+            this.emailLabel = fieldMap.get('Email').getLabel();
+
+            Map<String, String> hedaEmailField = new Map<String, String>();
+            //build map for HEDA email field map (Label, API Name)
+            for(String fieldName : fieldMap.keySet() ) {
+                if(String.isNotBlank(UTIL_Namespace.getNamespace()) && fieldName.startsWithIgnoreCase(UTIL_Namespace.getNamespace())) {
+                    hedaEmailField.put(fieldMap.get(fieldName).getLabel(), fieldName);
+                }
+            }
 
             for(String fieldName : fieldMap.keySet() ) {
-                if ( fieldName != 'Email' ) {
+                //If the field is not a standard email field and it is not duplicate with HEDA email, then add it to the list
+                if ( fieldName != emailLabel && !(hedaEmailField.get(fieldMap.get(fieldName).getLabel()) != null &&
+                        fieldName != hedaEmailField.get(fieldMap.get(fieldName).getLabel()))) {
                     String emailField = (String)contact.get(fieldName);
 
                     allFields.add( new CON_EmailField( emailField, fieldMap.get(fieldName).getLabel(), fieldName ) );
@@ -199,6 +210,7 @@ public class CON_Email {
         }
 
         public CON_EmailField getFieldByPrefLabel(String labelSearch) {
+            labelSearch = getCustomPicklistValue(labelSearch);
             for(CON_EmailField field : this.allFields) {
                 if (labelSearch == field.label || labelSearch == field.prefLabel) {
                     return field;
@@ -224,6 +236,22 @@ public class CON_Email {
             }
             return null;
         }
+
+        //Check if transalted picklist value of preferred email exist
+        private String getCustomPicklistValue(String lableSearch)
+        {
+            Map<String,String> apiLabelMappings = new Map<String,String>();
+            Schema.DescribeFieldResult fieldResult = Contact.Preferred_Email__c.getDescribe();
+            List<Schema.PicklistEntry> picklistEntries = fieldResult.getPicklistValues();
+            for( Schema.PicklistEntry entry : fieldResult.getPicklistValues()) {
+                if (entry.getValue() == lableSearch)
+                {
+                    return entry.getLabel();
+                }
+            }
+            return lableSearch;
+        }
+
     }
 
     /*******************************************************************************************************
@@ -242,9 +270,9 @@ public class CON_Email {
         public CON_EmailField(String val, String lbl, String api ) {
             // Store default email field mappings to preferred email pick list.
             Map<String,String> preferredEmailMappings = new Map<String,String>{
-                'University Email' => 'University',
-                'Work Email' => 'Work',
-                'Alternate Email' => 'Alternate'
+                    'University Email' => 'University',
+                    'Work Email' => 'Work',
+                    'Alternate Email' => 'Alternate'
             };
 
             this.value = val;

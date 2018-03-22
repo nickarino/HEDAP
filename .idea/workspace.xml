@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="Merge remote-tracking branch 'remotes/b/master'&#10;&#10;# Conflicts:&#10;#&#9;src/classes/ACCT_IndividualAccounts_TDTM.cls&#10;#&#9;src/classes/ACCT_IndividualAccounts_TEST.cls&#10;#&#9;src/classes/CON_Email.cls">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_Dropdown.cmp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_Dropdown.cmp-meta.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_DropdownController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_DropdownHelper.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/cumulusci.yml" afterPath="$PROJECT_DIR$/cumulusci.yml" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_TabsHelper.js" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_TabsHelper.js" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/labels/CustomLabels.labels" afterPath="$PROJECT_DIR$/src/labels/CustomLabels.labels" />
+      <change beforePath="$PROJECT_DIR$/src/objects/Hierarchy_Settings__c.object" afterPath="$PROJECT_DIR$/src/objects/Hierarchy_Settings__c.object" />
+      <change beforePath="$PROJECT_DIR$/src/package.xml" afterPath="$PROJECT_DIR$/src/package.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +36,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="merge-with-HEDAP-foundation.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="merge-with-HEDAP-foundation.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="420">
+              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ACCT_IndividualAccounts_TDTM.cls" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11730">
+              <caret line="779" column="1" lean-forward="false" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CON_Email.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/CON_Email.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="851">
+              <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ACCT_IndividualAccounts_TEST.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -82,6 +135,9 @@
       <list>
         <option value="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" />
         <option value="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" />
+        <option value="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" />
+        <option value="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
+        <option value="$PROJECT_DIR$/src/classes/CON_Email.cls" />
       </list>
     </option>
   </component>
@@ -98,7 +154,7 @@
         <entry key="hedap-fork">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1519091049596" />
+              <option name="moduleContentsLastModified" value="1521752592347" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
@@ -1803,7 +1859,7 @@
       <workItem from="1520285368035" duration="89000" />
       <workItem from="1520285471754" duration="571000" />
       <workItem from="1521665836804" duration="1484000" />
-      <workItem from="1521748304628" duration="645000" />
+      <workItem from="1521748304628" duration="2445000" />
     </task>
     <task id="LOCAL-00001" summary="update everything after meeting with scott">
       <created>1521748587300</created>
@@ -1824,7 +1880,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13052000" />
+    <option name="totallyTimeSpent" value="14852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -1838,7 +1894,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48390558" sideWeight="0.31458333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48390558" sideWeight="0.68541664" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33773378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33773378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2185,9 +2241,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        <state relative-caret-position="420">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CON_Email.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11730">
+          <caret line="779" column="1" lean-forward="false" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
