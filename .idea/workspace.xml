@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" afterPath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" />
-      <change beforePath="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" afterPath="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +20,8 @@
       <file leaf-file-name="merge-with-HEDAP-foundation.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="78" lean-forward="true" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+            <state relative-caret-position="165">
+              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -1815,8 +1803,16 @@
       <workItem from="1520285368035" duration="89000" />
       <workItem from="1520285471754" duration="571000" />
       <workItem from="1521665836804" duration="1484000" />
-      <workItem from="1521748304628" duration="247000" />
+      <workItem from="1521748304628" duration="645000" />
     </task>
+    <task id="LOCAL-00001" summary="update everything after meeting with scott">
+      <created>1521748587300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521748587300</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1828,7 +1824,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12654000" />
+    <option name="totallyTimeSpent" value="13052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -1905,6 +1901,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update everything after meeting with scott" />
+    <option name="LAST_COMMIT_MESSAGE" value="update everything after meeting with scott" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2185,8 +2185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="78" lean-forward="true" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+        <state relative-caret-position="165">
+          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
           <folding />
         </state>
       </provider>
