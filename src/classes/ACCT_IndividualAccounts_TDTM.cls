@@ -45,7 +45,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
     * @description a set of languages that require different naming conventions
     */
     private static Set<String> EasternOrderLanguages = new Set<String>{
-            'ja','ko','vi','hu','ro','zh_CN','zh_TW'
+        'ja','ko','vi','hu','ro','zh_CN','zh_TW'
     };
 
     /*******************************************************************************************************
@@ -67,7 +67,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
     * @return dmlWrapper.
     ********************************************************************************************************/
     public override DmlWrapper run(List<SObject> newlist, List<SObject> oldlist,
-            TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult) {
+        TDTM_Runnable.Action triggerAction, Schema.DescribeSObjectResult objResult) {
 
         list<Contact> contacts = (list<Contact>)newlist;
         list<Contact> oldContacts = (list<Contact>)oldlist;
@@ -86,15 +86,15 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 
         map<Id, Contact> mapContactIdContactOwnerChange = new map<Id, Contact>();
 
-        if (triggerAction == TDTM_Runnable.Action.AfterInsert || triggerAction == TDTM_Runnable.Action.AfterUpdate) {
+		if (triggerAction == TDTM_Runnable.Action.AfterInsert || triggerAction == TDTM_Runnable.Action.AfterUpdate) {
 
-            // requery to get correct Account values (and all the other fields we will look at)
-            string strSoql = 'select id, AccountId,' +
-                    'Account.RecordTypeID, ' +
-                    'Account.Primary_Contact__c, Account.Name,' +
-                    'firstname, lastname, OwnerId, Salutation,' +
-                    'MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingLatitude, MailingLongitude, ' +
-                    'OtherStreet, OtherCity, OtherState, OtherPostalCode, OtherCountry, OtherLatitude, OtherLongitude, ';
+           // requery to get correct Account values (and all the other fields we will look at)
+           string strSoql = 'select id, AccountId,' +
+                'Account.RecordTypeID, ' +
+                'Account.Primary_Contact__c, Account.Name,' +
+                'firstname, lastname, OwnerId, Salutation,' +
+                'MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, MailingLatitude, MailingLongitude, ' +
+                'OtherStreet, OtherCity, OtherState, OtherPostalCode, OtherCountry, OtherLatitude, OtherLongitude, ';
 
             if (ADDR_Addresses_UTIL.isStateCountryPicklistsEnabled)
                 strSoql += 'MailingCountryCode, MailingStateCode, OtherCountryCode, OtherStateCode, ';
@@ -120,7 +120,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
                 // AFTER INSERT
                 if (triggerAction == TDTM_Runnable.Action.AfterInsert && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert)) {
 
-                    // Account should be created if:
+                	// Account should be created if:
                     //    1. The account isn't set by the user
                     //    2. The Account Model is not blank
                     if (c.AccountId == null && defaultRecTypeID != null) {
@@ -140,16 +140,16 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
                             setAccountIdHHToRename.add(c.AccountId);
                         }
                     }
-                }
+	            }
 
                 // AFTER UPDATE
                 if (triggerAction == TDTM_Runnable.Action.AfterUpdate && !TDTM_ProcessControl.getRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update)) {
                     // HH account should be created if:
-                    //   1. The account has been blanked out by the user
-                    //   2. The Account Model is not blank
-                    if (c.AccountId == null && defaultRecTypeID != null) {
-                        listContactNeedAccount.add(c);
-                    }
+	                //   1. The account has been blanked out by the user
+	                //   2. The Account Model is not blank
+	                if (c.AccountId == null && defaultRecTypeID != null) {
+	                    listContactNeedAccount.add(c);
+	                }
 
                     // if the account (any type) has changed
                     if (c.AccountId != oldContacts[i].AccountId) {
@@ -176,7 +176,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 
                     // check for ownership changes
                     if (c.OwnerId != oldContacts[i].OwnerId) {
-                        mapContactIdContactOwnerChange.put(c.Id, c);
+                    	mapContactIdContactOwnerChange.put(c.Id, c);
                     }
 
                     // if the contact's last name has changed and it is using admin account model
@@ -188,7 +188,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 
                     // Rename the account if the name of contact is changed and the account model is household account
                     if ((c.LastName != oldContacts[i].LastName
-                            || c.FirstName != oldContacts[i].FirstName)
+                                || c.FirstName != oldContacts[i].FirstName)
                             && c.AccountId != null
                             && c.Account.RecordTypeId == UTIL_Describe.getHhAccRecTypeID()
                             && UTIL_CustomSettingsFacade.getSettings().Automatic_Household_Naming__c != false){
@@ -216,7 +216,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
         // now done going thru all contacts, do our DML logic based on our lists
 
         if (listContactNeedAccount.size() > 0) {
-            UTIL_Debug.debug('****Number of contacts that need accounts created: ' + listContactNeedAccount.size());
+        	UTIL_Debug.debug('****Number of contacts that need accounts created: ' + listContactNeedAccount.size());
             //add the newly created or updated Contacts that need a new individual account
             insertContactAccount(listContactNeedAccount, dmlWrapper);
         }
@@ -235,7 +235,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             updateOwners(mapContactIdContactOwnerChange, dmlWrapper);
         }
         if (listContactAccountDelete.size() > 0) {
-            UTIL_Debug.debug('****Number of accs to delete: ' + listContactAccountDelete.size());
+        	UTIL_Debug.debug('****Number of accs to delete: ' + listContactAccountDelete.size());
             // check all old accounts to delete is they are left hanging around
             deleteContactAccountsIfEmpty(listContactAccountDelete, dmlWrapper);
         }
@@ -251,12 +251,12 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Update, false);
         }else if (triggerAction == TDTM_Runnable.Action.AfterDelete){
             TDTM_ProcessControl.setRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Delete, false);
-        }
+        }            
         if (setAccountIdHHToRename.size() > 0){
             updateHHAccountsName(setAccountIdHHToRename);
         }
 
-        return dmlWrapper;
+    	return dmlWrapper;
     }
 
     /*******************************************************************************************************
@@ -318,23 +318,23 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 
         //Build a set of primary contact ids based on give account ids
         List<Account> listAccount = [SELECT Primary_Contact__c,
-        (SELECT id
-        FROM Contacts
-        LIMIT 1)
-        FROM Account
-        WHERE Id in :listAccountId];
+                                            (SELECT id
+                                            FROM Contacts
+                                            LIMIT 1)
+                                    FROM Account
+                                    WHERE Id in :listAccountId];
         for (Account acc : listAccount) {
             setPrimaryContactIds.add(acc.Primary_Contact__c);
         }
 
         if (setPrimaryContactIds.size() > 0) {
             for (Account acc : [SELECT id,
-            (SELECT id
-            FROM Contacts
-            WHERE id in :setPrimaryContactIds
-            LIMIT 1)
-            FROM Account
-            WHERE id in : listAccountId]){
+                                    (SELECT id
+                                    FROM Contacts
+                                    WHERE id in :setPrimaryContactIds
+                                    LIMIT 1)
+                                FROM Account
+                                WHERE id in : listAccountId]){
                 //An account need to be reset if it can not find a child contact who is primary contact
                 if (acc.Contacts.size() == 0) {
                     setAccToResetIds.add(acc.Id);
@@ -396,20 +396,20 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
                 // if a user has blanked out the Account for a Contact, this will put it right back
                 c.AccountId = acc.Id;
             } else {
-                UTIL_Debug.debug('****Creating new account');
+            	UTIL_Debug.debug('****Creating new account');
 
                 // construct the individual account for the Contact
                 Account a = new Account();
 
                 // construct the Account name
                 if(defaultRecTypeID == UTIL_Describe.getHhAccRecTypeID())
-                    a.Name = strNameHHAccountForContact(new List<Contact>{c});
+                	a.Name = strNameHHAccountForContact(new List<Contact>{c});
                 //TODO: we should not be asking for the record type directly, and instead let the use tell us which record type
                 //represents an Administrative account.
                 else if(defaultRecTypeID == UTIL_Describe.getAdminAccRecTypeID())
-                    a.Name = strNameAdmAccountForContact(c);
+                	a.Name = strNameAdmAccountForContact(c);
                 else
-                        a.Name = strNameAccountForContact(c);
+                    a.Name = strNameAccountForContact(c);
 
                 //connect the Account to the Contact for HHAccount
                 if (c.Id != null) {
@@ -435,7 +435,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
 
         List<Contact> contactsToUpdate = new List<Contact>();
         if (accountInserts.size() > 0) {
-            UTIL_Debug.debug('****Number of accounts to insert: ' + accountInserts.size());
+        	UTIL_Debug.debug('****Number of accounts to insert: ' + accountInserts.size());
             // we can't use dmlWrapper because we need to get the new AccountID's into the Contacts.
             // we do want it to be all or nothing, so errors won't get lost.
             insert accountInserts;
@@ -468,18 +468,18 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             }
 
             accountsOnContacts = [Select Id, Type, RecordTypeId, (Select Id from Opportunities limit 1),
-            (select Id from Contacts limit 1) from Account where Id IN :accountIds];
+                                  (select Id from Contacts limit 1) from Account where Id IN :accountIds];
 
             for (Account thisAccount : accountsOnContacts) {
                 // Looking at a setting to determine which account types can be deleted (W-009779)
                 if (UTIL_CustomSettingsFacade.getSettings().Accounts_to_Delete__c != null && thisAccount.RecordTypeId != null
-                        && UTIL_CustomSettingsFacade.getSettings().Accounts_to_Delete__c.contains(thisAccount.RecordTypeId)) {
+                && UTIL_CustomSettingsFacade.getSettings().Accounts_to_Delete__c.contains(thisAccount.RecordTypeId)) {
 
                     // If there are no Opportunities for this Account, add it for deletion
                     if (thisAccount.Opportunities.size() == 0 && thisAccount.Contacts.size() == 0) {
                         accountsForDeletion.add(thisAccount);
                     } else if (thisAccount.RecordTypeId == UTIL_Describe.getHhAccRecTypeID() ||
-                            thisAccount.RecordTypeId == UTIL_Describe.getAdminAccRecTypeID()) {
+                    thisAccount.RecordTypeId == UTIL_Describe.getAdminAccRecTypeID()) {
                         listAccountIdUpdate.add(thisAccount.Id);
                     }
                 }
@@ -487,7 +487,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
         }
         // delete the accounts
         if (accountsForDeletion.size() > 0)
-            dmlWrapper.objectsToDelete.addAll(accountsForDeletion);
+        	dmlWrapper.objectsToDelete.addAll(accountsForDeletion);
         // update any HH accounts that just lost a contact
         if (listAccountIdUpdate.size() > 0)
             updateParentAcc(listAccountIdUpdate, dmlWrapper);
@@ -504,25 +504,25 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             list<Account> listAccToUpdate = new list<Account>();
             set<Id> setAccId = new set<Id>();
             for (Contact con : mapContactIdContactOwnerChange.values()) {
-                setAccId.add(con.AccountId);
+            	setAccId.add(con.AccountId);
             }
 
             list<Account> listAcc = [Select Id, RecordTypeId, Primary_Contact__c, OwnerId, (select Id from Contacts limit 2) from Account
-            where Id IN :setAccId];
+                where Id IN :setAccId];
 
             for (Account acc : listAcc) {
                 // only consider HH and Admin Accounts
                 //TODO: use setting to determine if Account owner should be changed (W-009780)
                 if (acc.RecordTypeId == UTIL_Describe.getHhAccRecTypeID() ||
-                        acc.RecordTypeId == UTIL_Describe.getAdminAccRecTypeID()) {
+                acc.RecordTypeId == UTIL_Describe.getAdminAccRecTypeID()) {
                     // if there is only 1 contact associated with this account
                     if (acc.Contacts.size() == 1 && acc.Primary_Contact__c != null) {
-                        Contact c = mapContactIdContactOwnerChange.get(acc.Primary_Contact__c);
-                        Id ownerIdContact = (c != null ? c.OwnerId : null);
-                        if (acc.OwnerId != ownerIdContact) {
-                            acc.OwnerId = ownerIdContact;
-                            listAccToUpdate.add(acc);
-                        }
+                    	Contact c = mapContactIdContactOwnerChange.get(acc.Primary_Contact__c);
+                    	Id ownerIdContact = (c != null ? c.OwnerId : null);
+                    	if (acc.OwnerId != ownerIdContact) {
+                    		acc.OwnerId = ownerIdContact;
+                    		listAccToUpdate.add(acc);
+                    	}
                     }
                 }
             }
@@ -547,7 +547,7 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
         } else {
 
             Set<String> householdLastNames = new Set<String>();
-
+            
             for (Contact con : cons) {
                 householdLastNames.add(con.LastName);
             }
@@ -599,9 +599,9 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
             mapAccIdToCon.put(con.AccountId, con);
         }
 
-        list<Account> listAcc = [SELECT Id, RecordTypeId
-        FROM Account
-        WHERE Id IN :mapAccIdToCon.keySet()];
+        list<Account> listAcc = [SELECT Id, RecordTypeId 
+                                 FROM Account
+                                 WHERE Id IN :mapAccIdToCon.keySet()];
 
         for (Account acc : listAcc) {
             // only consider Admin Accounts

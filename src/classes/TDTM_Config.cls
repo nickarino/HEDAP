@@ -56,12 +56,12 @@ public class TDTM_Config {
     * @return List<TDTM_Global_API.TdtmToken> List of trigger handler tokens with the default values.
     *********************************************************************************************************/
     public static List<TDTM_Global_API.TdtmToken> getTdtmConfig() {
-        if(tdtmTokensCache != null) {
+        if(tdtmTokensCache != null && tdtmTokensCache.size() > 0) {
             return tdtmTokensCache;
         }
         List<TDTM_Global_API.TdtmToken> tokens = new List<TDTM_Global_API.TdtmToken>();
         List<Trigger_Handler__c> tdtmConfig = [select Class__c, Object__c, Trigger_Action__c, Load_Order__c, Active__c,
-                            Asynchronous__c, Filter_Field__c, Filter_Value__c, User_Managed__c, Owned_by_Namespace__c from Trigger_Handler__c];
+                            Asynchronous__c, Filter_Field__c, Filter_Value__c, User_Managed__c, Owned_by_Namespace__c, Usernames_to_Exclude__c from Trigger_Handler__c];
 
         // Getting the default configuration only if there is no data in the Trigger Handler object. Otherwise
         // we would delete customizations and Trigger Handlers entries that aren't in the default configuration.
@@ -72,7 +72,7 @@ public class TDTM_Config {
         for(Trigger_Handler__c handler : tdtmConfig) {
             tokens.add(new TDTM_Global_API.TdtmToken(handler.Class__c, handler.Object__c, handler.Trigger_Action__c,
                     handler.Load_Order__c, handler.Active__c, handler.Asynchronous__c,
-                    handler.Filter_Field__c, handler.Filter_Value__c, handler.User_Managed__c, handler.Owned_by_Namespace__c));
+                    handler.Filter_Field__c, handler.Filter_Value__c, handler.User_Managed__c, handler.Owned_by_Namespace__c, handler.Usernames_to_Exclude__c));
         }
 
         tdtmTokensCache = tokens;
@@ -85,20 +85,17 @@ public class TDTM_Config {
     * @return List<TDTM_Global_API.TdtmToken> List of trigger handler tokens with the default values.
     *********************************************************************************************************/
     public static List<TDTM_Global_API.TdtmToken> getDefaultTdtmConfig() {
-        if(tdtmTokensCache != null) {
-            return tdtmTokensCache;
-        }
+        //Removed tdtmTokensCache here since this method suppose to always return default TDTM from TDTM_DefaultConfig. We do not need to cache it since there is no query in this method. Also, it should not shared the same cached tokens with getTdtmConfig method.
 
         List<TDTM_Global_API.TdtmToken> tokens = new List<TDTM_Global_API.TdtmToken>();
 
         List<Trigger_Handler__c> existingHandlers = TDTM_DefaultConfig.getDefaultRecords();
         for(Trigger_Handler__c handler : existingHandlers) {
             tokens.add(
-                new TDTM_Global_API.TdtmToken(handler.Class__c, handler.Object__c, handler.Trigger_Action__c, handler.Load_Order__c, handler.Active__c, handler.Asynchronous__c, handler.Filter_Field__c, handler.Filter_Value__c, handler.User_Managed__c, handler.Owned_by_Namespace__c )
+                new TDTM_Global_API.TdtmToken(handler.Class__c, handler.Object__c, handler.Trigger_Action__c, handler.Load_Order__c, handler.Active__c, handler.Asynchronous__c, handler.Filter_Field__c, handler.Filter_Value__c, handler.User_Managed__c, handler.Owned_by_Namespace__c, handler.Usernames_to_Exclude__c )
             );
         }
 
-        tdtmTokensCache = tokens;
 
         return tokens;
     }
@@ -130,10 +127,22 @@ public class TDTM_Config {
         //Getting the TDTM configuration and storing it in the cache.
         List<TDTM_Global_API.TdtmToken> tdtmTokens = getTdtmConfig();
         List<TDTM_Global_API.TdtmToken> objectTokens = new List<TDTM_Global_API.TdtmToken>();
-
+        //Get current username
+        String currUserName = UserInfo.getUserName();
         for(TDTM_Global_API.TdtmToken token : tdtmTokens) {
+            //Get a list of excluded usernames in lowercase
+            Set<String> excludedUserNamesLowercase = new Set<String>();
+            Set<String> excludedUserNames = (token.usernamesToExclude != null ?
+                    new Set<String>(token.usernamesToExclude.split('\\s*;\\s*')) : new Set<String>());
+            for (String username : excludedUserNames) {
+                excludedUserNamesLowercase.add(username.toLowerCase());
+            }
             //Filtering those active by object and action.
-            if(token.active && token.targetObject == objectName && token.actions.contains(action.Name())) {
+            //Actions should not be null, otherwise it will throw null pointer exception. We might need to create a WI to do more validation on insert/update Trigger Handler
+            if(token.active && token.targetObject == objectName
+                    && token.actions != null
+                    && token.actions.contains(action.Name())
+                    && !excludedUserNamesLowercase.contains(currUsername)) {
                 objectTokens.add(token);
             }
         }

@@ -43,7 +43,7 @@ private class ACCT_IndividualAccounts_TEST {
     @isTest
     public static void insertContactTriggerOff() {
         UTIL_CustomSettingsFacade.getSettingsForTests(
-                new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
+            new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         // turn off all TDTM triggers for this component
         TDTM_ProcessControl.turnOffRecursionFlag(TDTM_ProcessControl.registeredTrigger.ACCT_IndividualAccounts_TDTM_After_Insert);
@@ -56,10 +56,10 @@ private class ACCT_IndividualAccounts_TEST {
         insert con;
         Test.stopTest();
 
-        Contact[] insertedContacts = [Select FirstName, LastName, AccountId from Contact where id = :con.id];
+        Contact[] insertedContacts = [Select FirstName, LastName, AccountId  from Contact where id=:con.id];
 
         //contact should have no AccountId
-        system.assertEquals(null, insertedContacts[0].AccountId);
+        system.assertEquals(null,insertedContacts[0].AccountId);
     }
 
     /*********************************************************************************************************
@@ -68,7 +68,7 @@ private class ACCT_IndividualAccounts_TEST {
     @isTest
     public static void newContact() {
         UTIL_CustomSettingsFacade.getSettingsForTests(
-                new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
+            new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         Contact con = UTIL_UnitTestData_TEST.getContact();
 
@@ -76,7 +76,7 @@ private class ACCT_IndividualAccounts_TEST {
         insert con;
         Test.stopTest();
 
-        Contact insertedContact = [Select Account.Name, AccountId from Contact where id = :con.id];
+        Contact insertedContact = [Select Account.Name, AccountId from Contact where id=:con.id];
 
         //the contact should have the right type
         system.assertEquals(con.LastName + ' ' + Label.DefaultAdminName, insertedcontact.Account.Name);
@@ -94,34 +94,27 @@ private class ACCT_IndividualAccounts_TEST {
         Contact con = UTIL_UnitTestData_TEST.getContact();
         insert con;
 
-        Contact[] insertedContacts = [
-                Select FirstName, LastName, AccountId, Account.Name,Account.Primary_Contact__c,MailingStreet,
-                        Account.BillingStreet
-                from Contact
-                where id = :con.id
-        ];
+        Contact[] insertedContacts = [Select FirstName, LastName, AccountId, Account.Name,Account.Primary_Contact__c,MailingStreet,
+        				Account.BillingStreet from Contact where id=:con.id];
 
         //one contact should have been created
-        system.assertEquals(1, insertedContacts.size());
+        system.assertEquals(1,insertedContacts.size());
 
         //relationship should be bi-directional
-        system.assertEquals(insertedcontacts[0].id, insertedcontacts[0].Account.Primary_Contact__c);
+        system.assertEquals(insertedcontacts[0].id,insertedcontacts[0].Account.Primary_Contact__c);
 
         String updatedContactLastName = 'Contact_forTestsChange';
         String updatedOtherCity = 'Seattle';
-        con.LastName = updatedContactLastName;
+        con.LastName=updatedContactLastName;
         con.OtherCity = updatedOtherCity;
         con.AccountId = insertedContacts[0].AccountId;
         update con;
 
-        Contact[] updatedContacts = [
-                Select FirstName, LastName, AccountId, Account.Name,Account.Primary_Contact__c
-                from Contact
-                where id = :con.id
-        ];
+        Contact[] updatedContacts = [Select FirstName, LastName, AccountId, Account.Name,Account.Primary_Contact__c
+                                     from Contact where id=:con.id];
 
         //relationship should be bi-directional
-        system.assertEquals(updatedContacts[0].id, updatedContacts[0].Account.Primary_Contact__c);
+        system.assertEquals(updatedContacts[0].id,updatedContacts[0].Account.Primary_Contact__c);
     }
 
     /*********************************************************************************************************
@@ -129,7 +122,7 @@ private class ACCT_IndividualAccounts_TEST {
     */
     @isTest
     public static void contactAddedToExistingAcc() {
-        UTIL_CustomSettingsFacade.getSettingsForTests(new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
+       UTIL_CustomSettingsFacade.getSettingsForTests(new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         List<Affl_Mappings__c> mappings = new List<Affl_Mappings__c>();
         mappings.add(new Affl_Mappings__c(Name = 'Business Organization', Account_Record_Type__c = 'Business Organization', Primary_Affl_Field__c = 'Primary Business Organization'));
@@ -139,7 +132,7 @@ private class ACCT_IndividualAccounts_TEST {
         Contact con = UTIL_UnitTestData_TEST.getContact();
         insert con;
 
-        con = [select AccountId from Contact where id = :con.id];
+        con = [select AccountId from Contact where id=:con.id];
         Id accountId = con.AccountId;
 
         Contact con2 = UTIL_UnitTestData_TEST.getContact();
@@ -150,7 +143,7 @@ private class ACCT_IndividualAccounts_TEST {
         insert con2;
         Test.stopTest();
 
-        con2 = [select AccountId, Primary_Household__c from Contact where id = :con2.id];
+        con2 = [select AccountId, Primary_Household__c from Contact where id=:con2.id];
         system.assertEquals(accountId, con2.AccountId);
 
         //system.assertEquals(accountId, con2.Primary_Household__c); In this case the field is not populated because we are dealing with Administrative accounts.
@@ -166,7 +159,7 @@ private class ACCT_IndividualAccounts_TEST {
         Contact con = UTIL_UnitTestData_TEST.getContact();
         insert con;
 
-        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id = :con.id];
+        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id=:con.id];
         Id accountId = insertedContacts[0].AccountId;
 
         Contact con2 = UTIL_UnitTestData_TEST.getContact();
@@ -177,9 +170,9 @@ private class ACCT_IndividualAccounts_TEST {
         con2.AccountId = accountId;
         update con2;
 
-        Contact[] insertedContact = [Select Account.Name,AccountId from Contact where id = :con2.id];
+        Contact[] insertedContact = [Select Account.Name,AccountId from Contact where id=:con2.id];
 
-        system.assertEquals(accountId, insertedContact[0].AccountId);
+        system.assertEquals(accountId,insertedContact[0].AccountId);
     }
 
     /*********************************************************************************************************
@@ -200,16 +193,16 @@ private class ACCT_IndividualAccounts_TEST {
         con.AccountId = accts[0].id;
         insert con;
 
-        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id = :con.id];
+        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id=:con.id];
 
         //the contact should be connected to the account
-        system.assertEquals(accts[0].id, insertedContacts[0].AccountId);
-        system.assertEquals(acctName, insertedContacts[0].Account.Name);
+        system.assertEquals(accts[0].id,insertedContacts[0].AccountId);
+        system.assertEquals(acctName,insertedContacts[0].Account.Name);
 
         con.LastName = 'Smith';
         update con;
 
-        Contact[] updatedContacts = [Select Account.Name, AccountId from Contact where id = :con.id];
+        Contact[] updatedContacts = [Select Account.Name, AccountId from Contact where id=:con.id];
         system.assertEquals(con.LastName + ' ' + Label.DefaultAdminName, updatedContacts[0].Account.Name);
     }
 
@@ -227,29 +220,29 @@ private class ACCT_IndividualAccounts_TEST {
         con.AccountId = acct.id;
         insert con;
 
-        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id = :con.id];
+        Contact[] insertedContacts = [Select Account.Name, AccountId from Contact where id=:con.id];
         //the contact should be connected to the account
-        system.assertEquals(acct.id, insertedContacts[0].AccountId);
+        system.assertEquals(acct.id,insertedContacts[0].AccountId);
 
         con.AccountId = null;
         Test.startTest();
         update con;
         Test.stopTest();
 
-        Contact[] updatedContacts = [Select Account.Name,AccountId from Contact where id = :con.id];
+        Contact[] updatedContacts = [Select Account.Name,AccountId from Contact where id=:con.id];
 
         //the account should not be the one we started with
-        system.assertNotEquals(acct.id, updatedContacts[0].AccountId);
+        system.assertNotEquals(acct.id,updatedContacts[0].AccountId);
     }
 
     /*********************************************************************************************************
     * @description Delete a Contact and verify its parent Account is deleted.
     */
-    @isTest
-    public static void deleteContactNoOpps() {
+     @isTest
+     public static void deleteContactNoOpps() {
         UTIL_CustomSettingsFacade.getSettingsForTests(new Hierarchy_Settings__c(
-                Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
-                Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
+                    Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
+                    Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         String newContactMailingStreet = '123 Elm St';
 
@@ -258,18 +251,18 @@ private class ACCT_IndividualAccounts_TEST {
         Id contactId;
         contactId = con.id;
 
-        Contact[] insertedContacts = [Select FirstName, LastName, AccountId from Contact where id = :contactId];
+        Contact[] insertedContacts = [Select FirstName, LastName, AccountId  from Contact where id=:contactId];
         Id createdAccountId = insertedContacts[0].AccountId;
 
         Test.startTest();
         delete con;
         Test.stopTest();
 
-        insertedContacts = [Select FirstName, LastName, AccountId from Contact where id = :contactId];
-        system.assertEquals(0, insertedContacts.size());
+        insertedContacts = [Select FirstName, LastName, AccountId  from Contact where id=:contactId];
+        system.assertEquals(0,insertedContacts.size());
 
-        Account[] missingAccount = [select id from Account where id = :createdAccountId];
-        system.assertEquals(0, missingAccount.size());
+        Account[] missingAccount = [select id from Account where id=:createdAccountId];
+        system.assertEquals(0,missingAccount.size());
     }
 
     /*********************************************************************************************************
@@ -278,8 +271,8 @@ private class ACCT_IndividualAccounts_TEST {
     @isTest
     public static void deleteContactWithOppAdm() {
         UTIL_CustomSettingsFacade.getSettingsForTests(new Hierarchy_Settings__c(
-                Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
-                Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
+                                    Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
+                                    Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         String newContactMailingStreet = '123 Elm St';
 
@@ -288,16 +281,16 @@ private class ACCT_IndividualAccounts_TEST {
         Id contactId;
         contactId = con.id;
         Id accountId;
-        Contact[] insertedContacts = [Select FirstName, LastName, AccountId from Contact where id = :contactId];
+        Contact[] insertedContacts = [Select FirstName, LastName, AccountId  from Contact where id=:contactId];
 
         Id createdAccountId = insertedContacts[0].AccountId;
 
         Opportunity opp = new Opportunity(
-                Amount = 500,
-                AccountId = createdAccountId,
-                Name = 'test',
-                StageName = 'Closed/Won',
-                CloseDate = System.today()
+            Amount=500,
+            AccountId=createdAccountId,
+            Name='test',
+            StageName='Closed/Won',
+            CloseDate=System.today()
         );
         insert opp;
 
@@ -305,8 +298,8 @@ private class ACCT_IndividualAccounts_TEST {
         delete con;
         Test.stopTest();
 
-        Account[] missingAccount = [select id from Account where id = :createdAccountId];
-        system.assertEquals(1, missingAccount.size());
+        Account[] missingAccount = [select id from Account where id=:createdAccountId];
+        system.assertEquals(1,missingAccount.size());
     }
 
     /*********************************************************************************************************
@@ -316,8 +309,8 @@ private class ACCT_IndividualAccounts_TEST {
     @isTest
     public static void deleteContactNormalAccount() {
         UTIL_CustomSettingsFacade.getSettingsForTests(new Hierarchy_Settings__c(
-                Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
-                Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
+                                    Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID(),
+                                    Accounts_to_Delete__c = UTIL_Describe.getAdminAccRecTypeID()));
 
         List<Account> orgAccounts = UTIL_UnitTestData_TEST.getMultipleTestAccounts(1, UTIL_Describe.getBizAccRecTypeID());
         //Account orgAccount = new Account(Name='Fake account', RecordTypeId = UTIL_Describe.getBizAccRecTypeID());
@@ -330,14 +323,14 @@ private class ACCT_IndividualAccounts_TEST {
         con.AccountId = orgAccounts[0].id;
         insert con;
 
-        Contact[] insertedContacts = [Select FirstName, LastName, AccountId from Contact where id = :con.id];
+        Contact[] insertedContacts = [Select FirstName, LastName, AccountId from Contact where id=:con.id];
         Id createdAccountId = insertedContacts[0].AccountId;
 
         Test.startTest();
         delete con;
         Test.stopTest();
 
-        Account[] missingAccount = [select id from Account where id = :createdAccountId];
+        Account[] missingAccount = [select id from Account where id=:createdAccountId];
         system.assertEquals(1, missingAccount.size());
     }
 
@@ -659,7 +652,7 @@ private class ACCT_IndividualAccounts_TEST {
         Test.stopTest();
 
         //After remove the Account lookup for con2, system will create a new Account for con2. So, we need to query the Account of con in order to verify the Account Name.
-        assertAccount = [SELECT Id, RecordType.Name, Name FROM Account where Id = :assertAccount.Id];
+        assertAccount = [SELECT Id, RecordType.Name, Name FROM Account where Id =: assertAccount.Id];
         system.assertEquals('Household Account', assertAccount.RecordType.Name);
         system.assertEquals(con.FirstName + ' ' + con.LastName + ' Household', assertAccount.Name);
     }

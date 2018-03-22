@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="Merge remote-tracking branch 'remotes/b/master'&#10;&#10;# Conflicts:&#10;#&#9;src/classes/ACCT_IndividualAccounts_TDTM.cls&#10;#&#9;src/classes/ACCT_IndividualAccounts_TEST.cls&#10;#&#9;src/classes/CON_Email.cls">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_Dropdown.cmp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_Dropdown.cmp-meta.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_DropdownController.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/aura/CMP_Acc_Naming_Dropdown/CMP_Acc_Naming_DropdownHelper.js" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/cumulusci.yml" afterPath="$PROJECT_DIR$/cumulusci.yml" />
+    <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="Merge remote-tracking branch 'remotes/b/master'&#10;&#10;# Conflicts:&#10;#&#9;src/classes/ACCT_IndividualAccounts_TDTM.cls&#10;#&#9;src/classes/ACCT_IndividualAccounts_TEST.cls&#10;#&#9;src/classes/CON_Email.cls&#10;&#10;update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Addr/STG_CMP_Addr.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Addr/STG_CMP_Addr.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Affl/STG_CMP_Affl.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Affl/STG_CMP_Affl.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Container/STG_CMP_Container.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Container/STG_CMP_Container.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_CourseConnections/STG_CMP_CourseConnections.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_CourseConnections/STG_CMP_CourseConnections.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Courses/STG_CMP_Courses.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Courses/STG_CMP_Courses.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Header/STG_CMP_Header.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Header/STG_CMP_Header.cmp" />
+      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Rel/STG_CMP_Rel.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Rel/STG_CMP_Rel.cmp" />
       <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_System/STG_CMP_System.cmp" />
       <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_Tabs.cmp" />
-      <change beforePath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_TabsHelper.js" afterPath="$PROJECT_DIR$/src/aura/STG_CMP_Tabs/STG_CMP_TabsHelper.js" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_CannotDelete_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_CannotDelete_TEST.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Account_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Account_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Addresses_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Addresses_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_AdminAcc_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_AdminAcc_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Contact_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Contact_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Contact_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Contact_TEST.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_HouseholdAcc_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ADDR_Seasonal_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/ADDR_Seasonal_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccChange_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccChange_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_ContactAccChange_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_ContactAccChange_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_ContactChange_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_ContactChange_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_MultiRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_MultiRecordType_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CCON_ConnectionBackfill_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CCON_ConnectionBackfill_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CCON_Faculty_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CCON_Faculty_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/COFF_Affiliation_TEST.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/CON_Email.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email_BATCH.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Email_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Email_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_EthnicityRace_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/CON_EthnicityRace_BATCH.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Preferred_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Preferred_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Preferred_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Preferred_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_PrimaryAffls_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/CON_PrimaryAffls_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/COUR_DescriptionCopy_BATCH.cls" afterPath="$PROJECT_DIR$/src/classes/COUR_DescriptionCopy_BATCH.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ERR_Notifier.cls" afterPath="$PROJECT_DIR$/src/classes/ERR_Notifier.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_Con_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_Con_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/REL_Relationships_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/REL_Relationships_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/STG_InstallScript_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/STG_InstallScript_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_DefaultConfig.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_DefaultConfig.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Filter_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/THAN_Filter_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/THAN_Filter_TDTM.cls" />
       <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" />
-      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade_TEST.cls" />
-      <change beforePath="$PROJECT_DIR$/src/labels/CustomLabels.labels" afterPath="$PROJECT_DIR$/src/labels/CustomLabels.labels" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Hierarchy_Settings__c.object" afterPath="$PROJECT_DIR$/src/objects/Hierarchy_Settings__c.object" />
-      <change beforePath="$PROJECT_DIR$/src/package.xml" afterPath="$PROJECT_DIR$/src/package.xml" />
+      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_UnitTestData_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_UnitTestData_TEST.cls" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +65,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/heda_wind$allTests.coverage" NAME="unmanaged-heda-dev-ed.lightning.force.com Coverage Results" MODIFIED="1521748396236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="heda_wind" CONNECTION_NAME="unmanaged-heda-dev-ed.lightning.force.com" />
+    <SUITE FILE_PATH="coverage/heda_wind$allTests.coverage" NAME="unmanaged-heda-dev-ed.lightning.force.com Coverage Results" MODIFIED="1521754608683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="heda_wind" CONNECTION_NAME="unmanaged-heda-dev-ed.lightning.force.com" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -40,81 +73,17 @@
         <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ACCT_IndividualAccounts_TDTM.cls" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls">
+      <file leaf-file-name="TDTM_Manager_TEST.cls" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11730">
-              <caret line="779" column="1" lean-forward="false" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CON_Email.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/CON_Email.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ACCT_IndividualAccounts_TEST.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UTIL_Describe_TEST.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe_TEST.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CON_Simple_Test.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Csv.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/Csv.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UTIL_Describe.cls" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe.cls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="146" column="47" lean-forward="false" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+            <state relative-caret-position="461">
+              <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1620,9 +1589,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
+    <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -1644,6 +1613,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1660,8 +1631,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -1705,7 +1674,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.merge-with-HEDAP-foundation.sh">
+  <component name="RunManager" selected="Apex Unit Tests.allTests">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -1859,7 +1828,8 @@
       <workItem from="1520285368035" duration="89000" />
       <workItem from="1520285471754" duration="571000" />
       <workItem from="1521665836804" duration="1484000" />
-      <workItem from="1521748304628" duration="2445000" />
+      <workItem from="1521748304628" duration="2992000" />
+      <workItem from="1521754822436" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="update everything after meeting with scott">
       <created>1521748587300</created>
@@ -1878,9 +1848,12 @@
     <history-entry file="allTests - 2018.03.22 at 15h 54m 34s.xml">
       <configuration name="allTests" configurationId="com.illuminatedcloud.intellij" />
     </history-entry>
+    <history-entry file="allTests - 2018.03.22 at 17h 37m 57s.xml">
+      <configuration name="allTests" configurationId="com.illuminatedcloud.intellij" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14852000" />
+    <option name="totallyTimeSpent" value="15752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -1888,6 +1861,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1899,7 +1873,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24236874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18315019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1914,7 +1888,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Illuminated Cloud" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1960,13 +1933,80 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update everything after meeting with scott" />
-    <option name="LAST_COMMIT_MESSAGE" value="update everything after meeting with scott" />
+    <MESSAGE value="Merge remote-tracking branch 'remotes/b/master'&#10;&#10;# Conflicts:&#10;#&#9;src/classes/ACCT_IndividualAccounts_TDTM.cls&#10;#&#9;src/classes/ACCT_IndividualAccounts_TEST.cls&#10;#&#9;src/classes/CON_Email.cls&#10;&#10;update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'remotes/b/master'&#10;&#10;# Conflicts:&#10;#&#9;src/classes/ACCT_IndividualAccounts_TDTM.cls&#10;#&#9;src/classes/ACCT_IndividualAccounts_TEST.cls&#10;#&#9;src/classes/CON_Email.cls&#10;&#10;update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CON_Email.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4305">
+          <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Csv.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="146" column="47" lean-forward="false" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2233,23 +2273,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="210">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/CON_Email.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
+        <state relative-caret-position="4305">
           <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -2259,19 +2291,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TEST.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        <state relative-caret-position="345">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11730">
-          <caret line="779" column="1" lean-forward="false" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
