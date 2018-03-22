@@ -53,11 +53,7 @@ private class TDTM_Manager_TEST {
 		// is testing that even though the references are different in memory they are still
 		// equal.
         Map<Id,Trigger_Handler__c> existingDBHandlers = new Map<Id,Trigger_Handler__c>([SELECT Id, Active__c , Asynchronous__c , Class__c , Load_Order__c , Object__c , Trigger_Action__c
-<<<<<<< HEAD
 	        , User_Managed__c, Owned_by_Namespace__c
-=======
-	        , User_Managed__c, Owned_by_Namespace__c, Filter_Field__c, Filter_Value__c, Usernames_to_Exclude__c
->>>>>>> remotes/b/master
 			FROM Trigger_Handler__c ORDER BY Load_Order__c]);
         Set<TDTM_Global_API.TdtmToken> existingDBtokens = manager.getTokenSet(existingDBHandlers);
 
@@ -113,9 +109,9 @@ private class TDTM_Manager_TEST {
 	public static void newHandlersNullName() {
 		// Setup new configuration
         Set<TDTM_Global_API.TdtmToken> noNameConfig = new Set<TDTM_Global_API.TdtmToken>();
-        noNameConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2, true, false, null, null, false, null, null));
-        noNameConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 5.2, true, false, null, null, false, null, null));
-        noNameConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, null, null));
+        noNameConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2, true, false, null, null, false, null));
+        noNameConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 5.2, true, false, null, null, false, null));
+        noNameConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, null));
 
 		TDTM_Manager manager = new TDTM_Manager(null);
 		Test.startTest();
@@ -136,7 +132,7 @@ private class TDTM_Manager_TEST {
 		tmpManager.updateDefaultTdtmConfig( defaults );
 
 		// Setup new defaults with one missing to test removal from default.
-		defaults.remove( new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert', 1, true, false, null, null, false, 'hed', null) ); // Remove a single item
+		defaults.remove( new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert', 1, true, false, null, null, false, 'hed') ); // Remove a single item
 
 		// Instantiate new manager for test.
 		TDTM_Manager removeManager = new TDTM_Manager('hed');
@@ -165,11 +161,11 @@ private class TDTM_Manager_TEST {
 		// Setup new configuration
         Set<TDTM_Global_API.TdtmToken> newConfig = new Set<TDTM_Global_API.TdtmToken>();
         // Update load order and trigger action
-        newConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2.2, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2.2, true, false, null, null, false, 'hed'));
         // Update load order and trigger action
-        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 5, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 5, true, false, null, null, false, 'hed'));
         // We'll leave this alone
-        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, 'hed'));
 
 
 		// Instantiate new manager for test.
@@ -237,11 +233,11 @@ private class TDTM_Manager_TEST {
 		// Setup new configuration
         Set<TDTM_Global_API.TdtmToken> newConfig = new Set<TDTM_Global_API.TdtmToken>();
         // Update load order and trigger action
-        newConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert;AfterUpdate', 2, true, false, null, null, false, 'hed'));
         // Update load order and trigger action
-        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 2, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate;AfterDelete', 2, true, false, null, null, false, 'hed'));
         // We'll leave this alone
-        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, 'hed', null));
+        newConfig.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1, true, false, null, null, false, 'hed'));
 
 		// Instantiate new manager for test.
 		TDTM_Manager updateManager = new TDTM_Manager('hed');
@@ -279,114 +275,11 @@ private class TDTM_Manager_TEST {
 		}
 	}
 
-<<<<<<< HEAD
-=======
-	//Test to make sure setTDTMConfig can clear the cache after being called
-	@isTest
-	public static void clearTokenCaches() {
-
-		//Build the token for the new handler
-		TDTM_Global_API.TdtmToken newHandlerToken = new TDTM_Global_API.TdtmToken('Contact_Update', 'Contact', 'BeforeInsert;BeforeUpdate', 0.2, true, false, null, null, false, '', null);
-
-
-        //Populate the cache with default TDTM Tokens
-        List<TDTM_Global_API.TdtmToken> tokens = TDTM_Global_API.getTdtmConfig();
-
-        //Verify that the cached tokens do not contains new token
-        Boolean hasNewHandler = false;
-        for(TDTM_Global_API.TdtmToken token : tokens) {
-            if(token.targetObject == newHandlerToken.targetObject && token.className == newHandlerToken.className) {
-                hasNewHandler = true;
-            }
-        }
-        system.assertEquals(false,hasNewHandler);
-
-        //call the setTdtmConfig to clear the cache and add new trigger handler
-		Test.startTest();
-		TDTM_Global_API.setTdtmConfig(new List<TDTM_Global_API.TdtmToken>{newHandlerToken});
-		Test.stopTest();
-
-		//now verify the old token get cleared
-		system.assertEquals(new List<TDTM_Global_API.TdtmToken>(), tokens);
-
-		//get token again and verify the new handler is included
-		tokens = TDTM_Global_API.getTdtmConfig();
-        hasNewHandler = false;
-		for(TDTM_Global_API.TdtmToken token : tokens) {
-			if(token.targetObject == newHandlerToken.targetObject && token.className == newHandlerToken.className) {
-				hasNewHandler = true;
-			}
-		}
-		system.assertEquals(true,hasNewHandler);
-	}
-
-	//Test to make sure we can save Filter Field and Filter Value for default config
-	@isTest
-	public static void updateDefaultFilterFieldFilterValue() {
-		//get default tokens
-		List<TDTM_Global_API.TdtmToken> tokens = TDTM_Global_API.getDefaultTdtmConfig();
-
-		//Change the Filter Field and Filter Value
-		for(TDTM_Global_API.TdtmToken token : tokens) {
-			if(token.className == 'REL_Relationships_Con_TDTM') {
-				token.filterField = 'Gender__c';
-				token.filterValue = 'Male';
-			}
-		}
-
-		//use setTdtmConfig to save the filter in the DB
-		Test.startTest();
-		TDTM_Global_API.setTdtmConfig(tokens, 'hed');
-		Test.stopTest();
-
-		//verify the filter is saved in DB
-		List<Trigger_Handler__c> handlers = [select Id from Trigger_Handler__c where Class__c = 'REL_Relationships_Con_TDTM' and Filter_Field__c = 'Gender__c' and Filter_Value__c = 'Male' ];
-		system.assertEquals(1, handlers.size());
-
-	}
-
-	//Test to make sure we can save Filter Field and Filter Value for user's config
-	@isTest
-	public static void updateUserHandlerFilterFieldFilterValue() {
-
-		//Build Token for User's Trigger Handler
-		TDTM_Global_API.TdtmToken newHandlerToken = new TDTM_Global_API.TdtmToken('Contact_Update', 'Contact', 'BeforeInsert;BeforeUpdate', 0.2, true, false, null, null, false, '', null);
-
-		//Save the token into the DB
-		TDTM_Global_API.setTdtmConfig(new List<TDTM_Global_API.TdtmToken>{newHandlerToken});
-
-		//Verify that Filter is not in the DB
-		Trigger_Handler__c handler = [select Filter_Field__c, Filter_Value__c from Trigger_Handler__c where Class__c = 'Contact_Update'];
-		system.assertEquals(null, handler.Filter_Field__c);
-		system.assertEquals(null, handler.Filter_Value__c);
-
-		//Get token and add Filter Field and Filter Value
-		List<TDTM_Global_API.TdtmToken> tokens = TDTM_Global_API.getTdtmConfig();
-		for(TDTM_Global_API.TdtmToken token : tokens) {
-			if(token.className == 'Contact_Update') {
-				token.filterField = 'Gender__c';
-				token.filterValue = 'Male';
-			}
-		}
-
-		//set Filter field and Filter value
-		Test.startTest();
-		TDTM_Global_API.setTdtmConfig(tokens);
-		Test.stopTest();
-
-		//verify that the Filter is saved in DB
-		handler = [select Filter_Field__c, Filter_Value__c from Trigger_Handler__c where Class__c = 'Contact_Update'];
-		system.assertEquals('Gender__c', handler.Filter_Field__c);
-		system.assertEquals('Male', handler.Filter_Value__c);
-
-	}
-
->>>>>>> remotes/b/master
 	private static Set<TDTM_Global_API.TdtmToken> getBasicDefaults() {
         Set<TDTM_Global_API.TdtmToken> h = new Set<TDTM_Global_API.TdtmToken>();
-        h.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert', 1, true, false, null, null, false, 'hed', null));
-        h.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate', 1.1, true, false, null, null, false, 'hed', null));
-        h.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1.2, true, false, null, null, false, 'hed', null));
+        h.add(new TDTM_Global_API.TdtmToken('AFFL_Affiliations_TDTM', 'Contact', 'AfterInsert', 1, true, false, null, null, false, 'hed'));
+        h.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Cm_TDTM', 'CampaignMember', 'AfterInsert;AfterUpdate', 1.1, true, false, null, null, false, 'hed'));
+        h.add(new TDTM_Global_API.TdtmToken('REL_Relationships_Con_TDTM', 'Contact', 'AfterInsert;AfterDelete', 1.2, true, false, null, null, false, 'hed'));
     	return h;
 	}
 
@@ -399,73 +292,4 @@ private class TDTM_Manager_TEST {
         return new Map<Id,Trigger_Handler__c>([SELECT Id, Active__c , Asynchronous__c , Class__c , Load_Order__c , Object__c , Trigger_Action__c , User_Managed__c, Owned_by_Namespace__c
         	FROM Trigger_Handler__c ORDER BY Load_Order__c]);
 	}
-
-	//Test to make sure trigger handler is skipped if usernames_to_excluded contains current username
-	@isTest
-	public static void excludeUsernamesSingleUser() {
-		UTIL_CustomSettingsFacade.getSettingsForTests(
-				new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
-
-		//Get current user's username
-		String currUserName = UserInfo.getUserName();
-
-		//Populate the Usernames_to_Exclude__c value of the trigger handler
-		Trigger_Handler__c handler = new Trigger_Handler__c(
-				Active__c = true, Asynchronous__c = false, Class__c = 'ACCT_IndividualAccounts_TDTM', Load_Order__c = 3, Object__c = 'Contact', Trigger_Action__c = 'AfterInsert;AfterUpdate;AfterDelete', Usernames_to_Exclude__c = currUserName);
-		insert handler;
-
-		Contact con = UTIL_UnitTestData_TEST.getContact();
-
-		Test.startTest();
-		insert con;
-		Test.stopTest();
-
-		//verify that the Admin account is not created for current user
-		Contact assertCon = [SELECT Id, AccountId from Contact WHERE Id = :con.Id];
-		system.assertEquals(null, assertCon.AccountId);
-
-	}
-
-	//Test to make sure trigger handler is skipped if usernames_to_excluded contains multiple certain usernames
-	@isTest
-	public static void excludeUsernamesMultipleUser() {
-		UTIL_CustomSettingsFacade.getSettingsForTests(
-				new Hierarchy_Settings__c(Account_Processor__c = UTIL_Describe.getAdminAccRecTypeID()));
-
-		//Get current user's username
-		String currUserName = UserInfo.getUserName();
-		User testUserDisabled = UTIL_UnitTestData_TEST.createNewUserForTests('excludedUser@gmail.com');
-		User testUserEnabled = UTIL_UnitTestData_TEST.createNewUserForTests('notExcludedUser@gmail.com');
-		String strUsernames = currUserName + ';' + testUserDisabled.Username;
-
-		//Populate the Usernames_to_Exclude__c value of the trigger handler
-		Trigger_Handler__c handler = new Trigger_Handler__c(
-				Active__c = true, Asynchronous__c = false, Class__c = 'ACCT_IndividualAccounts_TDTM', Load_Order__c = 3, Object__c = 'Contact', Trigger_Action__c = 'AfterInsert;AfterUpdate;AfterDelete', Usernames_to_Exclude__c = strUsernames);
-		insert handler;
-
-		Contact con = UTIL_UnitTestData_TEST.getContact();
-		Contact con2 = UTIL_UnitTestData_TEST.getContact();
-		Contact con3 = UTIL_UnitTestData_TEST.getContact();
-
-		Test.startTest();
-		insert con;
-		System.runAs(testUserDisabled) {
-			insert con2;
-		}
-		System.runAs(testUserEnabled) {
-			insert con3;
-		}
-		Test.stopTest();
-
-		//verify that the Admin account is not created for current user
-		Contact assertCon = [SELECT Id, AccountId from Contact WHERE Id = :con.Id];
-		system.assertEquals(null, assertCon.AccountId);
-		Contact assertCon2 = [SELECT Id, AccountId from Contact WHERE Id = :con2.Id];
-		system.assertEquals(null, assertCon2.AccountId);
-		Contact assertCon3 = [SELECT Id, AccountId from Contact WHERE Id = :con3.Id];
-		system.assertNotEquals(null, assertCon3.AccountId);
-
-	}
-
-
 }

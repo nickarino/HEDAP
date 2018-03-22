@@ -81,3 +81,12 @@ fi
 #     env -i git clone https://github.com/apex-commons/SoqlBuilder.git
 #     env -i git clone https://github.com/apex-commons/StringUtils.git
 #fi
+
+#If you're taking the module approach (which I think is a good approach), you'll want to do the following:
+#Configure the common module in IC to use the same connection as your salesforce module so that IC knows to deploy those classes to the same organization.
+#Only include the metadata types in the common module in your metadata subscription, so yes, I think only ApexClass is required.
+#Make your salesforce module depend on your common module so that things link properly. You do that under File>Project Structure>Modules by clicking on the salesforce module, then the Dependencies tab, and then adding a module dependency for the common module.
+#With that in place, it should work as you'd like with a proper separation of concerns between your source (under the salesforce module) and the third-party lib source (under the common module).
+#
+#Regards,
+#Scott

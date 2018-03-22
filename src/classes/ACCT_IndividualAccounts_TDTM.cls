@@ -178,16 +178,6 @@ public class ACCT_IndividualAccounts_TDTM extends TDTM_Runnable {
                     if (c.OwnerId != oldContacts[i].OwnerId) {
                     	mapContactIdContactOwnerChange.put(c.Id, c);
                     }
-<<<<<<< HEAD
-=======
-
-                    // if the contact's last name has changed and it is using admin account model
-                    // update the name of the related admin account
-                    if (c.LastName != oldContacts[i].LastName && c.AccountId != null)
-                    {
-                        listContactsChangedLastName.add(c);
-                    }
->>>>>>> remotes/b/master
                 }
                 i += 1;
             }

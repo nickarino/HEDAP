@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f402b98f-b36b-4a48-b225-0b07a554ac41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" afterPath="$PROJECT_DIR$/IlluminatedCloud/unmanaged_heda_dev_ed_lightning_force_com/OfflineSymbolTable.zip" />
+      <change beforePath="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" afterPath="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/ACCT_IndividualAccounts_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TDTM.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/AFFL_AccRecordType_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" afterPath="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Config.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Global_API.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" afterPath="$PROJECT_DIR$/src/classes/TDTM_Manager_TEST.cls" />
+      <change beforePath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" afterPath="$PROJECT_DIR$/src/classes/UTIL_CustomSettingsFacade.cls" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,13 +24,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/heda_wind$allTests.coverage" NAME="unmanaged-heda-dev-ed.lightning.force.com Coverage Results" MODIFIED="1521748396236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="heda_wind" CONNECTION_NAME="unmanaged-heda-dev-ed.lightning.force.com" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="merge-with-HEDAP-foundation.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="78" lean-forward="true" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UTIL_Describe_TEST.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe_TEST.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CON_Simple_Test.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Csv.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Csv.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UTIL_Describe.cls" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe.cls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2190">
+              <caret line="146" column="47" lean-forward="false" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -35,17 +89,1485 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" />
+        <option value="$PROJECT_DIR$/src/classes/CON_Simple_Test.cls" />
+      </list>
+    </option>
+  </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
       <map>
+        <entry key="common-libraries">
+          <value>
+            <ModuleWorkspaceSettings>
+              <option name="moduleContentsLastModified" value="1518888951396" />
+            </ModuleWorkspaceSettings>
+          </value>
+        </entry>
         <entry key="hedap-fork">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1518729550421" />
+              <option name="moduleContentsLastModified" value="1519091049596" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="apexLogLevel" value="FINEST" />
+            <option name="calloutsLogLevel" value="ERROR" />
+            <option name="documentText" value="List&lt;Opportunity&gt; opportunities = new List&lt;Opportunity&gt;();&#10;Map&lt;Id, Account&gt; accountsByIds = new Map&lt;Id, Account&gt;();" />
+            <option name="profilingLogLevel" value="ERROR" />
+            <option name="splitterProportion" value="0.39927074" />
+            <option name="systemLogLevel" value="FINEST" />
+            <option name="validationLogLevel" value="ERROR" />
+            <option name="visualforceLogLevel" value="ERROR" />
+            <option name="workflowLogLevel" value="ERROR" />
+          </AnonymousApexSettings>
+        </option>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="unmanaged-heda-dev-ed.lightning.force.com">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="AURA/AUTOCOMPLETE" value="1521666199000" />
+                      <entry key="AURA/AUTOCOMPLETEDATAPROVIDER" value="1521666199000" />
+                      <entry key="AURA/AUTOCOMPLETEOPTION" value="1521666199000" />
+                      <entry key="AURA/AUTOCOMPLETESELECTLISTOPTION" value="1521666199000" />
+                      <entry key="AURA/CMP_RECTYPES" value="1521666199000" />
+                      <entry key="AURA/CMP_RECTYPES_DROPDOWN" value="1521666199000" />
+                      <entry key="AURA/DATAPROVIDERINTERFACE" value="1521666199000" />
+                      <entry key="AURA/STG_APP" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_ADDR" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_AFFL" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_BASE" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_CONTAINER" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_COURSECONNECTIONS" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_COURSES" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_HEADER" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_REL" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_SYSTEM" value="1521666199000" />
+                      <entry key="AURA/STG_CMP_TABS" value="1521666199000" />
+                      <entry key="AURA/STG_EVT_CANCEL" value="1521666199000" />
+                      <entry key="AURA/STG_EVT_EDIT" value="1521666199000" />
+                      <entry key="AURA/STG_EVT_SAVE" value="1521666199000" />
+                      <entry key="AURA/SVGICON" value="1521666199000" />
+                      <entry key="AURA/SVGICON_EVT_PRESS" value="1521666199000" />
+                      <entry key="CLASSES/ACCT_CANNOTDELETE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ACCT_CANNOTDELETE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ACCT_INDIVIDUALACCOUNTS_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ACCT_INDIVIDUALACCOUNTS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_ACCOUNT_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_ADDRESSES_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_ADDRESSES_UTIL.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_ADMINACC_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_CONTACT_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_CONTACT_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_HOUSEHOLDACC_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_OTHERACC_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_SEASONAL_BATCH.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_SEASONAL_SCHED.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_SEASONAL_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ADDR_SEASONAL_UTIL.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_ACCCHANGE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_ACCRECORDTYPE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_ACCRECORDTYPE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_CONTACTACCCHANGE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_CONTACTCHANGE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_MULTIRECORDTYPEMAPPER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_MULTIRECORDTYPE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/AFFL_MULTIRECORDTYPE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CCON_CONNECTIONBACKFILL_BATCH.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CCON_CONNECTIONBACKFILL_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CCON_FACULTY_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CCON_FACULTY_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CENR_ACADEMICPROGRAM_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CENR_ACADEMICPROGRAM_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CMP_SETTINGSDATAPROVIDER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CMP_SETTINGSDATAPROVIDER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/COFF_AFFILIATION_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/COFF_AFFILIATION_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_CANNOTDELETE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_CANNOTDELETE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_DONOTCONTACT_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_DONOTCONTACT_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_EMAIL.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_EMAIL_BATCH.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_EMAIL_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_ETHNICITYRACE_BATCH.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_ETHNICITYRACE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_PREFERRED_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_PREFERRED_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_PRIMARYAFFLS_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_PRIMARYAFFLS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CON_SIMPLE_TEST.CLS" value="1521666678031" />
+                      <entry key="CLASSES/COUR_DESCRIPTIONCOPY_BATCH.CLS" value="1521666196000" />
+                      <entry key="CLASSES/COUR_DESCRIPTIONCOPY_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/CSV.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_ASYNCERRORS.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_ASYNCERRORS_SCHED.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_ASYNCERRORS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_EXCEPTIONHANDLER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_EXCEPTIONHANDLER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_HANDLER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_HANDLER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/ERR_NOTIFIER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/NICK_TEMP.CLS" value="1521666196000" />
+                      <entry key="CLASSES/PREN_AFFILIATION_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/PREN_AFFILIATION_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/REL_RELATIONSHIPS_CM_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/REL_RELATIONSHIPS_CON_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/REL_RELATIONSHIPS_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/REL_RELATIONSHIPS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/REL_UTILS.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_BASE_CTRL.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_BASE_CTRL_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_COURSECONNECTIONS.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_COURSECONNECTIONS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_COURSES.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_COURSES_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_INSTALLSCRIPT.CLS" value="1521666196000" />
+                      <entry key="CLASSES/STG_INSTALLSCRIPT_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_CONFIG.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_DEFAULTCONFIG.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_DMLGT200_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_FILTER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_FILTER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_GLOBAL_API.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_MANAGER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_MANAGER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_PROCESSCONTROL.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_RUNNABLE.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_TRIGGERACTIONHELPER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_TRIGGERHANDLER.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TDTM_TRIGGERSCAFFOLDS_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TERM_COURSEOFF_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/TERM_COURSEOFF_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/THAN_CLEARCACHE_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/THAN_CLEARCACHE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/THAN_FILTER_TDTM.CLS" value="1521666196000" />
+                      <entry key="CLASSES/THAN_FILTER_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_CUSTOMSETTINGSFACADE.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_CUSTOMSETTINGSFACADE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_DEBUG.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_DESCRIBE.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_DESCRIBE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_NAMESPACE.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_NAMESPACE_TEST.CLS" value="1521666196000" />
+                      <entry key="CLASSES/UTIL_UNITTESTDATA_TEST.CLS" value="1521666196000" />
+                      <entry key="PAGES/STG_SETTINGS.PAGE" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_ACCOUNT.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_ADDRESS.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_AFFILIATION.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_CAMPAIGN.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_CAMPAIGNMEMBER.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_CONTACT.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_COURSE.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_COURSEENROLLMENT.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_COURSEOFFERING.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_OPPORTUNITY.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_PROGRAMENROLLMENT.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_RELATIONSHIP.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_TERM.TRIGGER" value="1521666199000" />
+                      <entry key="TRIGGERS/TDTM_TRIGGERHANDLER.TRIGGER" value="1521666199000" />
+                    </map>
+                  </option>
+                  <option name="lastBuildScope" value="MODULE" />
+                  <option name="lastBuildViewToggles">
+                    <map>
+                      <entry key="DEPLOY">
+                        <value>
+                          <BuildViewToggles>
+                            <option name="showLocalAndServer" value="true" />
+                            <option name="showLocalOnly" value="true" />
+                            <option name="showServerOnly" value="false" />
+                            <option name="showSubscribedOnly" value="true" />
+                          </BuildViewToggles>
+                        </value>
+                      </entry>
+                    </map>
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="metadataContents">
+          <map>
+            <entry key="unmanaged-heda-dev-ed.lightning.force.com">
+              <value>
+                <MetadataContents>
+                  <option name="lastPopulated" value="1519091049596" />
+                  <option name="metadataTypes">
+                    <set>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="ACCT_CannotDelete_TDTM" />
+                            <option value="ACCT_CannotDelete_TEST" />
+                            <option value="ACCT_IndividualAccounts_TDTM" />
+                            <option value="ACCT_IndividualAccounts_TEST" />
+                            <option value="ADDR_Account_TDTM" />
+                            <option value="ADDR_Addresses_TDTM" />
+                            <option value="ADDR_Addresses_UTIL" />
+                            <option value="ADDR_AdminAcc_TEST" />
+                            <option value="ADDR_Contact_TDTM" />
+                            <option value="ADDR_Contact_TEST" />
+                            <option value="ADDR_HouseholdAcc_TEST" />
+                            <option value="ADDR_OtherAcc_TEST" />
+                            <option value="ADDR_Seasonal_BATCH" />
+                            <option value="ADDR_Seasonal_SCHED" />
+                            <option value="ADDR_Seasonal_TEST" />
+                            <option value="ADDR_Seasonal_UTIL" />
+                            <option value="AFFL_AccChange_TDTM" />
+                            <option value="AFFL_AccRecordType_TDTM" />
+                            <option value="AFFL_AccRecordType_TEST" />
+                            <option value="AFFL_ContactAccChange_TEST" />
+                            <option value="AFFL_ContactChange_TDTM" />
+                            <option value="AFFL_MultiRecordTypeMapper" />
+                            <option value="AFFL_MultiRecordType_TDTM" />
+                            <option value="AFFL_MultiRecordType_TEST" />
+                            <option value="CCON_ConnectionBackfill_BATCH" />
+                            <option value="CCON_ConnectionBackfill_TEST" />
+                            <option value="CCON_Faculty_TDTM" />
+                            <option value="CCON_Faculty_TEST" />
+                            <option value="CENR_AcademicProgram_TDTM" />
+                            <option value="CENR_AcademicProgram_TEST" />
+                            <option value="CMP_SettingsDataProvider" />
+                            <option value="CMP_SettingsDataProvider_TEST" />
+                            <option value="COFF_Affiliation_TDTM" />
+                            <option value="COFF_Affiliation_TEST" />
+                            <option value="CON_CannotDelete_TDTM" />
+                            <option value="CON_CannotDelete_TEST" />
+                            <option value="CON_DoNotContact_TDTM" />
+                            <option value="CON_DoNotContact_TEST" />
+                            <option value="CON_Email" />
+                            <option value="CON_Email_BATCH" />
+                            <option value="CON_Email_TEST" />
+                            <option value="CON_EthnicityRace_BATCH" />
+                            <option value="CON_EthnicityRace_TEST" />
+                            <option value="CON_Preferred_TDTM" />
+                            <option value="CON_Preferred_TEST" />
+                            <option value="CON_PrimaryAffls_TDTM" />
+                            <option value="CON_PrimaryAffls_TEST" />
+                            <option value="CON_Simple_Test" />
+                            <option value="COUR_DescriptionCopy_BATCH" />
+                            <option value="COUR_DescriptionCopy_TEST" />
+                            <option value="Csv" />
+                            <option value="ERR_AsyncErrors" />
+                            <option value="ERR_AsyncErrors_SCHED" />
+                            <option value="ERR_AsyncErrors_TEST" />
+                            <option value="ERR_ExceptionHandler" />
+                            <option value="ERR_ExceptionHandler_TEST" />
+                            <option value="ERR_Handler" />
+                            <option value="ERR_Handler_TEST" />
+                            <option value="ERR_Notifier" />
+                            <option value="Nick_Temp" />
+                            <option value="PREN_Affiliation_TDTM" />
+                            <option value="PREN_Affiliation_TEST" />
+                            <option value="REL_Relationships_Cm_TDTM" />
+                            <option value="REL_Relationships_Con_TDTM" />
+                            <option value="REL_Relationships_TDTM" />
+                            <option value="REL_Relationships_TEST" />
+                            <option value="REL_Utils" />
+                            <option value="STG_Base_CTRL" />
+                            <option value="STG_Base_CTRL_TEST" />
+                            <option value="STG_CourseConnections" />
+                            <option value="STG_CourseConnections_TEST" />
+                            <option value="STG_Courses" />
+                            <option value="STG_Courses_TEST" />
+                            <option value="STG_InstallScript" />
+                            <option value="STG_InstallScript_TEST" />
+                            <option value="TDTM_Config" />
+                            <option value="TDTM_DefaultConfig" />
+                            <option value="TDTM_Filter" />
+                            <option value="TDTM_Filter_TEST" />
+                            <option value="TDTM_Global_API" />
+                            <option value="TDTM_Manager" />
+                            <option value="TDTM_Manager_TEST" />
+                            <option value="TDTM_Runnable" />
+                            <option value="TDTM_TriggerActionHelper" />
+                            <option value="TDTM_TriggerHandler" />
+                            <option value="TDTM_TriggerScaffolds_TEST" />
+                            <option value="TERM_CourseOff_TDTM" />
+                            <option value="TERM_CourseOff_TEST" />
+                            <option value="THAN_Filter_TDTM" />
+                            <option value="THAN_Filter_TEST" />
+                            <option value="UTIL_CustomSettingsFacade" />
+                            <option value="UTIL_CustomSettingsFacade_TEST" />
+                            <option value="UTIL_Debug" />
+                            <option value="UTIL_Describe" />
+                            <option value="UTIL_Describe_TEST" />
+                            <option value="UTIL_Namespace" />
+                            <option value="UTIL_Namespace_TEST" />
+                            <option value="UTIL_UnitTestData_TEST" />
+                          </set>
+                        </option>
+                        <option name="name" value="ApexClass" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="STG_Settings" />
+                          </set>
+                        </option>
+                        <option name="name" value="ApexPage" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="TDTM_Account" />
+                            <option value="TDTM_Address" />
+                            <option value="TDTM_Affiliation" />
+                            <option value="TDTM_Campaign" />
+                            <option value="TDTM_CampaignMember" />
+                            <option value="TDTM_Contact" />
+                            <option value="TDTM_Course" />
+                            <option value="TDTM_CourseEnrollment" />
+                            <option value="TDTM_CourseOffering" />
+                            <option value="TDTM_Opportunity" />
+                            <option value="TDTM_ProgramEnrollment" />
+                            <option value="TDTM_Relationship" />
+                            <option value="TDTM_Term" />
+                            <option value="TDTM_TriggerHandler" />
+                          </set>
+                        </option>
+                        <option name="name" value="ApexTrigger" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="AppSwitcher" />
+                            <option value="Salesforce1" />
+                          </set>
+                        </option>
+                        <option name="name" value="AppMenu" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case.Standard" />
+                            <option value="Lead.Standard" />
+                          </set>
+                        </option>
+                        <option name="name" value="AssignmentRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case" />
+                            <option value="Lead" />
+                          </set>
+                        </option>
+                        <option name="name" value="AssignmentRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="CMP_RecTypes" />
+                            <option value="CMP_RecTypes_Dropdown" />
+                            <option value="STG_App" />
+                            <option value="STG_CMP_Addr" />
+                            <option value="STG_CMP_Affl" />
+                            <option value="STG_CMP_Base" />
+                            <option value="STG_CMP_Container" />
+                            <option value="STG_CMP_CourseConnections" />
+                            <option value="STG_CMP_Courses" />
+                            <option value="STG_CMP_Header" />
+                            <option value="STG_CMP_Rel" />
+                            <option value="STG_CMP_System" />
+                            <option value="STG_CMP_Tabs" />
+                            <option value="STG_EVT_Cancel" />
+                            <option value="STG_EVT_Edit" />
+                            <option value="STG_EVT_Save" />
+                            <option value="autocomplete" />
+                            <option value="autocompleteDataProvider" />
+                            <option value="autocompleteOption" />
+                            <option value="autocompleteSelectListOption" />
+                            <option value="dataProviderInterface" />
+                            <option value="svgIcon" />
+                            <option value="svgIcon_EVT_Press" />
+                          </set>
+                        </option>
+                        <option name="name" value="AuraDefinitionBundle" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case" />
+                            <option value="Lead" />
+                          </set>
+                        </option>
+                        <option name="name" value="AutoResponseRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="DataCloudGeoLocation" />
+                          </set>
+                        </option>
+                        <option name="name" value="CleanDataService" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Internal Zone" />
+                          </set>
+                        </option>
+                        <option name="name" value="Community" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.HEDA_Account_Compact_Layout" />
+                            <option value="Address__c.HEDA_Address_Compact_Layout" />
+                            <option value="Affiliation__c.HEDA_Affiliation_Compact_Layout" />
+                            <option value="Contact.HEDA_Contact_Compact_Layout" />
+                            <option value="Course_Enrollment__c.HEDA_Course_Enrollment_Compact_Layout" />
+                            <option value="Course_Offering__c.HEDA_Course_Offering_Compact_Layout" />
+                            <option value="Course__c.HEDA_Course_Compact_Layout" />
+                            <option value="Program_Enrollment__c.HEDA_Program_Enrollment_Compact_Layout" />
+                            <option value="Relationship__c.HEDA_Relationship_Compact_Layout" />
+                            <option value="Term__c.HEDA_Term_Compact_Layout" />
+                          </set>
+                        </option>
+                        <option name="name" value="CompactLayout" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="unmanaged_heda_dev_ed_lightning" />
+                          </set>
+                        </option>
+                        <option name="name" value="ConnectedApp" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="HEDA" />
+                            <option value="standard__AppLauncher" />
+                            <option value="standard__Chatter" />
+                            <option value="standard__Community" />
+                            <option value="standard__Content" />
+                            <option value="standard__LightningSales" />
+                            <option value="standard__LightningSalesConsole" />
+                            <option value="standard__LightningService" />
+                            <option value="standard__Marketing" />
+                            <option value="standard__Platform" />
+                            <option value="standard__Sales" />
+                            <option value="standard__Service" />
+                            <option value="standard__ServiceConsole" />
+                            <option value="standard__Sites" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomApplication" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.Active__c" />
+                            <option value="Account.Current_Address__c" />
+                            <option value="Account.CustomerPriority__c" />
+                            <option value="Account.NumberofLocations__c" />
+                            <option value="Account.Primary_Contact__c" />
+                            <option value="Account.SLAExpirationDate__c" />
+                            <option value="Account.SLASerialNumber__c" />
+                            <option value="Account.SLA__c" />
+                            <option value="Account.UpsellOpportunity__c" />
+                            <option value="Address__c.Address_Type__c" />
+                            <option value="Address__c.Default_Address__c" />
+                            <option value="Address__c.Formula_MailingAddress__c" />
+                            <option value="Address__c.Formula_MailingStreetAddress__c" />
+                            <option value="Address__c.Geolocation__c" />
+                            <option value="Address__c.Latest_End_Date__c" />
+                            <option value="Address__c.Latest_Start_Date__c" />
+                            <option value="Address__c.MailingCity__c" />
+                            <option value="Address__c.MailingCountry__c" />
+                            <option value="Address__c.MailingPostalCode__c" />
+                            <option value="Address__c.MailingState__c" />
+                            <option value="Address__c.MailingStreet2__c" />
+                            <option value="Address__c.MailingStreet__c" />
+                            <option value="Address__c.Parent_Account__c" />
+                            <option value="Address__c.Parent_Contact__c" />
+                            <option value="Address__c.Seasonal_End_Day__c" />
+                            <option value="Address__c.Seasonal_End_Month__c" />
+                            <option value="Address__c.Seasonal_End_Year__c" />
+                            <option value="Address__c.Seasonal_Start_Day__c" />
+                            <option value="Address__c.Seasonal_Start_Month__c" />
+                            <option value="Address__c.Seasonal_Start_Year__c" />
+                            <option value="Affiliation__c.Account__c" />
+                            <option value="Affiliation__c.Affiliation_Type__c" />
+                            <option value="Affiliation__c.Contact__c" />
+                            <option value="Affiliation__c.Description__c" />
+                            <option value="Affiliation__c.EndDate__c" />
+                            <option value="Affiliation__c.Primary__c" />
+                            <option value="Affiliation__c.Role__c" />
+                            <option value="Affiliation__c.StartDate__c" />
+                            <option value="Affiliation__c.Status__c" />
+                            <option value="Affl_Mappings__c.Account_Record_Type__c" />
+                            <option value="Affl_Mappings__c.Auto_Program_Enrollment_Role__c" />
+                            <option value="Affl_Mappings__c.Auto_Program_Enrollment_Status__c" />
+                            <option value="Affl_Mappings__c.Auto_Program_Enrollment__c" />
+                            <option value="Affl_Mappings__c.Primary_Affl_Field__c" />
+                            <option value="Case.EngineeringReqNumber__c" />
+                            <option value="Case.PotentialLiability__c" />
+                            <option value="Case.Product__c" />
+                            <option value="Case.SLAViolation__c" />
+                            <option value="Contact.AlternateEmail__c" />
+                            <option value="Contact.Citizenship__c" />
+                            <option value="Contact.Country_of_Origin__c" />
+                            <option value="Contact.Current_Address__c" />
+                            <option value="Contact.Deceased__c" />
+                            <option value="Contact.Do_Not_Contact__c" />
+                            <option value="Contact.Dual_Citizenship__c" />
+                            <option value="Contact.Ethnicity__c" />
+                            <option value="Contact.Exclude_from_Household_Formal_Greeting__c" />
+                            <option value="Contact.Exclude_from_Household_Informal_Greeting__c" />
+                            <option value="Contact.Exclude_from_Household_Name__c" />
+                            <option value="Contact.FERPA__c" />
+                            <option value="Contact.Financial_Aid_Applicant__c" />
+                            <option value="Contact.Gender__c" />
+                            <option value="Contact.HIPAA_Detail__c" />
+                            <option value="Contact.HIPAA__c" />
+                            <option value="Contact.Languages__c" />
+                            <option value="Contact.Level__c" />
+                            <option value="Contact.Military_Background__c" />
+                            <option value="Contact.Military_Service__c" />
+                            <option value="Contact.Naming_Exclusions__c" />
+                            <option value="Contact.PreferredPhone__c" />
+                            <option value="Contact.Preferred_Email__c" />
+                            <option value="Contact.Primary_Academic_Program__c" />
+                            <option value="Contact.Primary_Address_Type__c" />
+                            <option value="Contact.Primary_Department__c" />
+                            <option value="Contact.Primary_Educational_Institution__c" />
+                            <option value="Contact.Primary_Household__c" />
+                            <option value="Contact.Primary_Organization__c" />
+                            <option value="Contact.Primary_Sports_Organization__c" />
+                            <option value="Contact.Race__c" />
+                            <option value="Contact.Religion__c" />
+                            <option value="Contact.Secondary_Address_Type__c" />
+                            <option value="Contact.Social_Security_Number__c" />
+                            <option value="Contact.UniversityEmail__c" />
+                            <option value="Contact.WorkEmail__c" />
+                            <option value="Contact.WorkPhone__c" />
+                            <option value="Contact.Work_Address__c" />
+                            <option value="Contact.is_Address_Override__c" />
+                            <option value="Course_Enrollment__c.Account__c" />
+                            <option value="Course_Enrollment__c.Affiliation__c" />
+                            <option value="Course_Enrollment__c.Contact__c" />
+                            <option value="Course_Enrollment__c.Course_Offering__c" />
+                            <option value="Course_Enrollment__c.Credits_Attempted__c" />
+                            <option value="Course_Enrollment__c.Credits_Earned__c" />
+                            <option value="Course_Enrollment__c.Grade__c" />
+                            <option value="Course_Enrollment__c.Primary__c" />
+                            <option value="Course_Enrollment__c.Program_Enrollment__c" />
+                            <option value="Course_Enrollment__c.Status__c" />
+                            <option value="Course_Offering__c.Capacity__c" />
+                            <option value="Course_Offering__c.Course__c" />
+                            <option value="Course_Offering__c.End_Date__c" />
+                            <option value="Course_Offering__c.Faculty__c" />
+                            <option value="Course_Offering__c.Section_ID__c" />
+                            <option value="Course_Offering__c.Start_Date__c" />
+                            <option value="Course_Offering__c.Term__c" />
+                            <option value="Course__c.Account__c" />
+                            <option value="Course__c.Course_ID__c" />
+                            <option value="Course__c.Credit_Hours__c" />
+                            <option value="Course__c.Description__c" />
+                            <option value="Course__c.Extended_Description__c" />
+                            <option value="Error__c.Context_Type__c" />
+                            <option value="Error__c.Datetime__c" />
+                            <option value="Error__c.Email_Sent__c" />
+                            <option value="Error__c.Error_Type__c" />
+                            <option value="Error__c.Full_Message__c" />
+                            <option value="Error__c.Object_Type__c" />
+                            <option value="Error__c.Posted_in_Chatter__c" />
+                            <option value="Error__c.Record_URL__c" />
+                            <option value="Error__c.Stack_Trace__c" />
+                            <option value="Goal.OrigGoalId__c" />
+                            <option value="Hierarchy_Settings__c.Account_Processor__c" />
+                            <option value="Hierarchy_Settings__c.Accounts_Addresses_Enabled__c" />
+                            <option value="Hierarchy_Settings__c.Accounts_to_Delete__c" />
+                            <option value="Hierarchy_Settings__c.Affl_ProgEnroll_Del_Status__c" />
+                            <option value="Hierarchy_Settings__c.Affl_ProgEnroll_Del__c" />
+                            <option value="Hierarchy_Settings__c.Allow_AutoCreated_Duplicates__c" />
+                            <option value="Hierarchy_Settings__c.Async_Error_Check_Last_Run__c" />
+                            <option value="Hierarchy_Settings__c.Contacts_Addresses_Enabled__c" />
+                            <option value="Hierarchy_Settings__c.Disable_Error_Handling__c" />
+                            <option value="Hierarchy_Settings__c.Disable_Preferred_Email_Enforcement__c" />
+                            <option value="Hierarchy_Settings__c.Enable_Course_Connections__c" />
+                            <option value="Hierarchy_Settings__c.Enable_Debug__c" />
+                            <option value="Hierarchy_Settings__c.Error_Notifications_On__c" />
+                            <option value="Hierarchy_Settings__c.Error_Notifications_To__c" />
+                            <option value="Hierarchy_Settings__c.Faculty_RecType__c" />
+                            <option value="Hierarchy_Settings__c.Household_Addresses_RecType__c" />
+                            <option value="Hierarchy_Settings__c.Reciprocal_Method__c" />
+                            <option value="Hierarchy_Settings__c.Relationship_Name_Field_Id__c" />
+                            <option value="Hierarchy_Settings__c.Relationship_Name_Id_Field_Id__c" />
+                            <option value="Hierarchy_Settings__c.Simple_Address_Change_Treated_as_Update__c" />
+                            <option value="Hierarchy_Settings__c.Store_Errors_On__c" />
+                            <option value="Hierarchy_Settings__c.Student_RecType__c" />
+                            <option value="Lead.CurrentGenerators__c" />
+                            <option value="Lead.NumberofLocations__c" />
+                            <option value="Lead.Primary__c" />
+                            <option value="Lead.ProductInterest__c" />
+                            <option value="Lead.SICCode__c" />
+                            <option value="Metric.OrigMetricId__c" />
+                            <option value="Opportunity.CurrentGenerators__c" />
+                            <option value="Opportunity.DeliveryInstallationStatus__c" />
+                            <option value="Opportunity.MainCompetitors__c" />
+                            <option value="Opportunity.OrderNumber__c" />
+                            <option value="Opportunity.TrackingNumber__c" />
+                            <option value="Program_Enrollment__c.Account__c" />
+                            <option value="Program_Enrollment__c.Admission_Date__c" />
+                            <option value="Program_Enrollment__c.Affiliation__c" />
+                            <option value="Program_Enrollment__c.Application_Submitted_Date__c" />
+                            <option value="Program_Enrollment__c.Class_Standing__c" />
+                            <option value="Program_Enrollment__c.Contact__c" />
+                            <option value="Program_Enrollment__c.Credits_Attempted__c" />
+                            <option value="Program_Enrollment__c.Credits_Earned__c" />
+                            <option value="Program_Enrollment__c.Eligible_to_Enroll__c" />
+                            <option value="Program_Enrollment__c.End_Date__c" />
+                            <option value="Program_Enrollment__c.Enrollment_Status__c" />
+                            <option value="Program_Enrollment__c.GPA__c" />
+                            <option value="Program_Enrollment__c.Graduation_Year__c" />
+                            <option value="Program_Enrollment__c.Start_Date__c" />
+                            <option value="Relationship_Auto_Create__c.Campaign_Types__c" />
+                            <option value="Relationship_Auto_Create__c.Field__c" />
+                            <option value="Relationship_Auto_Create__c.Object__c" />
+                            <option value="Relationship_Auto_Create__c.Relationship_Type__c" />
+                            <option value="Relationship_Lookup__c.Active__c" />
+                            <option value="Relationship_Lookup__c.Female__c" />
+                            <option value="Relationship_Lookup__c.Male__c" />
+                            <option value="Relationship_Lookup__c.Neutral__c" />
+                            <option value="Relationship__c.Contact__c" />
+                            <option value="Relationship__c.Description__c" />
+                            <option value="Relationship__c.Emergency_Contact__c" />
+                            <option value="Relationship__c.ReciprocalRelationship__c" />
+                            <option value="Relationship__c.RelatedContact__c" />
+                            <option value="Relationship__c.Relationship_Explanation__c" />
+                            <option value="Relationship__c.SYSTEM_SystemCreated__c" />
+                            <option value="Relationship__c.Status__c" />
+                            <option value="Relationship__c.Type__c" />
+                            <option value="Term__c.Account__c" />
+                            <option value="Term__c.End_Date__c" />
+                            <option value="Term__c.Start_Date__c" />
+                            <option value="Trigger_Handler__c.Active__c" />
+                            <option value="Trigger_Handler__c.Asynchronous__c" />
+                            <option value="Trigger_Handler__c.Class__c" />
+                            <option value="Trigger_Handler__c.Filter_Field__c" />
+                            <option value="Trigger_Handler__c.Filter_Value__c" />
+                            <option value="Trigger_Handler__c.Load_Order__c" />
+                            <option value="Trigger_Handler__c.Object__c" />
+                            <option value="Trigger_Handler__c.Owned_by_Namespace__c" />
+                            <option value="Trigger_Handler__c.Trigger_Action__c" />
+                            <option value="Trigger_Handler__c.User_Managed__c" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomField" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="AfflMappingsDescription" />
+                            <option value="AfflProgEnrollDeleted" />
+                            <option value="AutoCreateFieldError" />
+                            <option value="BothFieldAndValue" />
+                            <option value="CannotDelete" />
+                            <option value="DefaultAccountName" />
+                            <option value="DefaultAdminName" />
+                            <option value="DefaultHouseholdName" />
+                            <option value="Female" />
+                            <option value="InvalidFilter" />
+                            <option value="Male" />
+                            <option value="PreferredEmailMatchMustExist" />
+                            <option value="PreferredEmailMatchNotNull" />
+                            <option value="PreferredEmailRequiredError" />
+                            <option value="Relationship_Explanation_Connector" />
+                            <option value="Relationship_Split" />
+                            <option value="RelationshipsAutoDescription" />
+                            <option value="RelationshipsLookupDescription" />
+                            <option value="addrHhAdmAccountOnly" />
+                            <option value="addrNotEnabledAccount" />
+                            <option value="addrNotEnabledContact" />
+                            <option value="addrSeasonalOverlap" />
+                            <option value="addrSeasonalPartial" />
+                            <option value="addrSeasonalPartialYear" />
+                            <option value="addrValidParentObjects" />
+                            <option value="afflNullPointerError" />
+                            <option value="exceptionRequiredField" />
+                            <option value="exceptionValidationRule" />
+                            <option value="noAccRecType" />
+                            <option value="noAfflMappings" />
+                            <option value="noAutoCreateSettings" />
+                            <option value="noRecSettings" />
+                            <option value="stgAccModelTitle" />
+                            <option value="stgCourseDescriptionCopyEmailBody" />
+                            <option value="stgCourseDescriptionCopyEmailSubject" />
+                            <option value="stgDefaultFacultyTypeTitle" />
+                            <option value="stgDefaultStudentTypeTitle" />
+                            <option value="stgDisableErrorHandlingTitle" />
+                            <option value="stgEnableCourseConnectionsTitle" />
+                            <option value="stgErrorNotifRecipientsTitle" />
+                            <option value="stgHelpAccountModel" />
+                            <option value="stgHelpAddressAccRecType" />
+                            <option value="stgHelpContactAddrs" />
+                            <option value="stgHelpContactPreferredEmail" />
+                            <option value="stgHelpCourseConnBackfillDescription" />
+                            <option value="stgHelpDefaultFacultyType" />
+                            <option value="stgHelpDefaultStudentType" />
+                            <option value="stgHelpEnableCourseConnections" />
+                            <option value="stgHelpErrorDisable" />
+                            <option value="stgHelpErrorNotifyOn" />
+                            <option value="stgHelpErrorNotifyTo" />
+                            <option value="stgHelpHouseAdmAccountAddressMgmt" />
+                            <option value="stgHelpHouseholdRecType" />
+                            <option value="stgHelpOrgAccountAddressMgmt" />
+                            <option value="stgHelpRelAutoCreatedDup" />
+                            <option value="stgHelpRelReciprocalMethod" />
+                            <option value="stgHelpSimpleAddrChangeIsUpdate" />
+                            <option value="stgHelpStoreErrorsOn" />
+                            <option value="stgPreferredEmailBatchEmailBody" />
+                            <option value="stgPreferredEmailBatchEmailSubject" />
+                            <option value="stgSendErrorsTitle" />
+                            <option value="stgStoreErrorsTitle" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomLabel" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="CustomLabels" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomLabels" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="AccountCleanInfo" />
+                            <option value="AccountContactRole" />
+                            <option value="Activity" />
+                            <option value="Address__c" />
+                            <option value="Affiliation__c" />
+                            <option value="Affl_Mappings__c" />
+                            <option value="Asset" />
+                            <option value="AssetRelationship" />
+                            <option value="AssistantProgress" />
+                            <option value="Campaign" />
+                            <option value="CampaignMember" />
+                            <option value="Case" />
+                            <option value="CaseContactRole" />
+                            <option value="CollaborationGroup" />
+                            <option value="CollaborationGroupMember" />
+                            <option value="Contact" />
+                            <option value="ContactCleanInfo" />
+                            <option value="ContentVersion" />
+                            <option value="Contract" />
+                            <option value="ContractContactRole" />
+                            <option value="Course_Enrollment__c" />
+                            <option value="Course_Offering__c" />
+                            <option value="Course__c" />
+                            <option value="DandBCompany" />
+                            <option value="Document" />
+                            <option value="DuplicateRecordItem" />
+                            <option value="DuplicateRecordSet" />
+                            <option value="EmailMessage" />
+                            <option value="Error__c" />
+                            <option value="Event" />
+                            <option value="ExchangeUserMapping" />
+                            <option value="FeedItem" />
+                            <option value="ForecastingCategoryMapping" />
+                            <option value="Hierarchy_Settings__c" />
+                            <option value="Idea" />
+                            <option value="Lead" />
+                            <option value="LeadCleanInfo" />
+                            <option value="Macro" />
+                            <option value="MacroAction" />
+                            <option value="MacroInstruction" />
+                            <option value="Opportunity" />
+                            <option value="OpportunityCompetitor" />
+                            <option value="OpportunityContactRole" />
+                            <option value="OpportunityLineItem" />
+                            <option value="Order" />
+                            <option value="OrderItem" />
+                            <option value="OrgDeleteRequest" />
+                            <option value="PartnerRole" />
+                            <option value="Pricebook2" />
+                            <option value="PricebookEntry" />
+                            <option value="Product2" />
+                            <option value="Program_Enrollment__c" />
+                            <option value="PushTopic" />
+                            <option value="QuickText" />
+                            <option value="Relationship_Auto_Create__c" />
+                            <option value="Relationship_Lookup__c" />
+                            <option value="Relationship__c" />
+                            <option value="Scorecard" />
+                            <option value="ScorecardAssociation" />
+                            <option value="ScorecardMetric" />
+                            <option value="Site" />
+                            <option value="SocialPersona" />
+                            <option value="Solution" />
+                            <option value="StreamingChannel" />
+                            <option value="Task" />
+                            <option value="Term__c" />
+                            <option value="Topic" />
+                            <option value="TopicAssignment" />
+                            <option value="Trigger_Handler__c" />
+                            <option value="User" />
+                            <option value="UserProvisioningRequest" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomObject" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Address__c-en_US" />
+                            <option value="Affiliation__c-en_US" />
+                            <option value="Affl_Mappings__c-en_US" />
+                            <option value="Course_Enrollment__c-en_US" />
+                            <option value="Course_Offering__c-en_US" />
+                            <option value="Course__c-en_US" />
+                            <option value="Error__c-en_US" />
+                            <option value="Hierarchy_Settings__c-en_US" />
+                            <option value="Program_Enrollment__c-en_US" />
+                            <option value="Relationship_Auto_Create__c-en_US" />
+                            <option value="Relationship_Lookup__c-en_US" />
+                            <option value="Relationship__c-en_US" />
+                            <option value="Term__c-en_US" />
+                            <option value="Trigger_Handler__c-en_US" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomObjectTranslation" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Address__c" />
+                            <option value="Affiliation__c" />
+                            <option value="Course_Enrollment__c" />
+                            <option value="Course_Offering__c" />
+                            <option value="Course__c" />
+                            <option value="HEDA_Settings" />
+                            <option value="Program_Enrollment__c" />
+                            <option value="Relationship__c" />
+                            <option value="Term__c" />
+                            <option value="Trigger_Handler__c" />
+                            <option value="standard-Account" />
+                            <option value="standard-AppLauncher" />
+                            <option value="standard-Asset" />
+                            <option value="standard-Campaign" />
+                            <option value="standard-Case" />
+                            <option value="standard-Chatter" />
+                            <option value="standard-CollaborationGroup" />
+                            <option value="standard-Console" />
+                            <option value="standard-Contact" />
+                            <option value="standard-ContentContribute" />
+                            <option value="standard-ContentSearch" />
+                            <option value="standard-ContentSubscriptions" />
+                            <option value="standard-Contract" />
+                            <option value="standard-DandBCompany" />
+                            <option value="standard-Dashboard" />
+                            <option value="standard-Document" />
+                            <option value="standard-DuplicateRecordSet" />
+                            <option value="standard-File" />
+                            <option value="standard-Forecasting3" />
+                            <option value="standard-Idea" />
+                            <option value="standard-JigsawSearch" />
+                            <option value="standard-Lead" />
+                            <option value="standard-ListEmail" />
+                            <option value="standard-Macro" />
+                            <option value="standard-Opportunity" />
+                            <option value="standard-Order" />
+                            <option value="standard-OtherUserProfile" />
+                            <option value="standard-Pricebook2" />
+                            <option value="standard-Product2" />
+                            <option value="standard-ProfilePlatformFeed" />
+                            <option value="standard-ProfilePlatformOverview" />
+                            <option value="standard-Sites" />
+                            <option value="standard-Solution" />
+                            <option value="standard-StreamingChannel" />
+                            <option value="standard-UserProfile" />
+                            <option value="standard-UserProvisioningRequest" />
+                            <option value="standard-Workspace" />
+                            <option value="standard-home" />
+                            <option value="standard-report" />
+                          </set>
+                        </option>
+                        <option name="name" value="CustomTab" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads" />
+                            <option value="Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts" />
+                          </set>
+                        </option>
+                        <option name="name" value="DuplicateRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="unfiled$public" />
+                          </set>
+                        </option>
+                        <option name="name" value="EmailFolder" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="unfiled$public/MarketingProductInquiryResponse" />
+                            <option value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
+                            <option value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
+                            <option value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
+                            <option value="unfiled$public/SalesNewCustomerEmail" />
+                            <option value="unfiled$public/SupportCaseAssignmentNotification" />
+                            <option value="unfiled$public/SupportCaseCreatedPhoneInquiries" />
+                            <option value="unfiled$public/SupportCaseCreatedWebInquiries" />
+                            <option value="unfiled$public/SupportCaseResponse" />
+                            <option value="unfiled$public/SupportEscalatedCaseNotification" />
+                            <option value="unfiled$public/SupportEscalatedCaseReassignment" />
+                            <option value="unfiled$public/SupportSelfServiceNewLoginandPassword" />
+                            <option value="unfiled$public/SupportSelfServiceResetPassword" />
+                          </set>
+                        </option>
+                        <option name="name" value="EmailTemplate" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case.Standard" />
+                          </set>
+                        </option>
+                        <option name="name" value="EscalationRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case" />
+                          </set>
+                        </option>
+                        <option name="name" value="EscalationRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="LightningSalesConsole_UtilityBar" />
+                            <option value="LightningService_UtilityBar" />
+                          </set>
+                        </option>
+                        <option name="name" value="FlexiPage" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="DE Default" />
+                          </set>
+                        </option>
+                        <option name="name" value="HomePageLayout" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="al" />
+                            <option value="sf_com_apps" />
+                          </set>
+                        </option>
+                        <option name="name" value="InstalledPackage" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account-Account %28Marketing%29 Layout" />
+                            <option value="Account-Account %28Sales%29 Layout" />
+                            <option value="Account-Account %28Support%29 Layout" />
+                            <option value="Account-Account Layout" />
+                            <option value="Account-HEDA Household Layout" />
+                            <option value="Account-HEDA Organization Layout" />
+                            <option value="Address__c-HEDA Address Layout" />
+                            <option value="Affiliation__c-HEDA Affiliation Layout" />
+                            <option value="Asset-Asset Layout" />
+                            <option value="AssetRelationship-Asset Relationship Layout" />
+                            <option value="Campaign-Campaign Layout" />
+                            <option value="CampaignMember-Campaign Member Page Layout" />
+                            <option value="Case-Case %28Marketing%29 Layout" />
+                            <option value="Case-Case %28Sales%29 Layout" />
+                            <option value="Case-Case %28Support%29 Layout" />
+                            <option value="Case-Case Layout" />
+                            <option value="CaseClose-Close Case Layout" />
+                            <option value="Contact-Contact %28Marketing%29 Layout" />
+                            <option value="Contact-Contact %28Sales%29 Layout" />
+                            <option value="Contact-Contact %28Support%29 Layout" />
+                            <option value="Contact-Contact Layout" />
+                            <option value="Contact-HEDA Contact Layout" />
+                            <option value="ContentVersion-Content Version Layout" />
+                            <option value="Contract-Contract Layout" />
+                            <option value="Course_Enrollment__c-HEDA Course Enrollment Layout" />
+                            <option value="Course_Offering__c-HEDA Course Offering Layout" />
+                            <option value="Course__c-HEDA Course Layout" />
+                            <option value="DandBCompany-D%26B Company Layout" />
+                            <option value="DuplicateRecordSet-Duplicate Record Set Layout" />
+                            <option value="EmailMessage-Email Message Layout" />
+                            <option value="Error__c-HEDA Error Layout" />
+                            <option value="Event-Event Layout" />
+                            <option value="Global-Global Layout" />
+                            <option value="Idea-Idea Layout" />
+                            <option value="Lead-Lead %28Marketing%29 Layout" />
+                            <option value="Lead-Lead %28Sales%29 Layout" />
+                            <option value="Lead-Lead %28Support%29 Layout" />
+                            <option value="Lead-Lead Layout" />
+                            <option value="Macro-Macro Layout" />
+                            <option value="Opportunity-Opportunity %28Marketing%29 Layout" />
+                            <option value="Opportunity-Opportunity %28Sales%29 Layout" />
+                            <option value="Opportunity-Opportunity %28Support%29 Layout" />
+                            <option value="Opportunity-Opportunity Layout" />
+                            <option value="OpportunityLineItem-Opportunity Product Layout" />
+                            <option value="Order-Order Layout" />
+                            <option value="OrderItem-Order Product Layout" />
+                            <option value="Pricebook2-Price Book Layout" />
+                            <option value="PricebookEntry-Price Book Entry Layout" />
+                            <option value="Product2-Product Layout" />
+                            <option value="Program_Enrollment__c-HEDA Program Enrollment Layout" />
+                            <option value="QuickText-Quick Text Layout" />
+                            <option value="Relationship__c-HEDA Relationship Layout" />
+                            <option value="Scorecard-Scorecard Layout" />
+                            <option value="ScorecardAssociation-Scorecard Association Layout" />
+                            <option value="ScorecardMetric-Scorecard Metric Layout" />
+                            <option value="SocialPersona-Social Persona Layout" />
+                            <option value="SocialPost-Social Post Layout" />
+                            <option value="Solution-Solution Layout" />
+                            <option value="Task-Task Layout" />
+                            <option value="Term__c-HEDA Term Layout" />
+                            <option value="Trigger_Handler__c-HEDA Trigger Handler Layout" />
+                            <option value="User-User Layout" />
+                            <option value="UserAlt-User Profile Layout" />
+                            <option value="UserProvAccount-User Provisioning Account Layout" />
+                            <option value="UserProvisioningLog-User Provisioning Log Layout" />
+                            <option value="UserProvisioningRequest-User Provisioning Request Layout" />
+                          </set>
+                        </option>
+                        <option name="name" value="Layout" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.AllAccounts" />
+                            <option value="Account.MyAccounts" />
+                            <option value="Account.NewLastWeek" />
+                            <option value="Account.NewThisWeek" />
+                            <option value="Account.PlatinumandGoldSLACustomers" />
+                            <option value="Activity.AllActivities" />
+                            <option value="Activity.MyActivities" />
+                            <option value="Activity.TodaysTasks" />
+                            <option value="Activity.UpcomingEvents" />
+                            <option value="Address__c.All" />
+                            <option value="Affiliation__c.All" />
+                            <option value="Asset.AllAssets" />
+                            <option value="Campaign.AllActiveCampaigns" />
+                            <option value="Campaign.MyActiveCampaigns" />
+                            <option value="Case.AllClosedCases" />
+                            <option value="Case.AllOpenCases" />
+                            <option value="Case.MyCases" />
+                            <option value="Case.MyOpenCases" />
+                            <option value="CollaborationGroup.All_ChatterGroups" />
+                            <option value="Contact.AllContacts" />
+                            <option value="Contact.BirthdaysThisMonth" />
+                            <option value="Contact.MyContacts" />
+                            <option value="Contact.NewLastWeek" />
+                            <option value="Contact.NewThisWeek" />
+                            <option value="Contract.AllActivatedContracts" />
+                            <option value="Contract.AllContracts" />
+                            <option value="Contract.AllDraftContracts" />
+                            <option value="Contract.AllInApprovalContracts" />
+                            <option value="Contract.MyActivatedContracts" />
+                            <option value="Contract.MyDraftContracts" />
+                            <option value="Contract.MyInApprovalContracts" />
+                            <option value="Course_Enrollment__c.All" />
+                            <option value="Course_Offering__c.All" />
+                            <option value="Course__c.All" />
+                            <option value="Idea.Ideas_Last_7_Days" />
+                            <option value="Lead.AllOpenLeads" />
+                            <option value="Lead.MyUnreadLeads" />
+                            <option value="Lead.TodaysLeads" />
+                            <option value="Lead.ViewCustom1" />
+                            <option value="Lead.ViewCustom2" />
+                            <option value="Opportunity.AllOpportunities" />
+                            <option value="Opportunity.ClosingNextMonth" />
+                            <option value="Opportunity.ClosingThisMonth" />
+                            <option value="Opportunity.Default_Opportunity_Pipeline" />
+                            <option value="Opportunity.MyOpportunities" />
+                            <option value="Opportunity.NewLastWeek" />
+                            <option value="Opportunity.NewThisWeek" />
+                            <option value="Opportunity.Private" />
+                            <option value="Opportunity.Won" />
+                            <option value="Order.AllActivatedOrders" />
+                            <option value="Order.AllDraftOrders" />
+                            <option value="Order.AllOrders" />
+                            <option value="Product2.AllProducts" />
+                            <option value="Program_Enrollment__c.All" />
+                            <option value="Relationship__c.All" />
+                            <option value="Scorecard.AllScorecards" />
+                            <option value="Scorecard.MyScorecards" />
+                            <option value="Solution.AllReviewedSolutions" />
+                            <option value="Solution.AllUnreviewedSolutions" />
+                            <option value="Term__c.All" />
+                            <option value="Trigger_Handler__c.All" />
+                            <option value="Trigger_Handler__c.All_Main_Fields" />
+                            <option value="User.ActiveUsers" />
+                            <option value="User.AdminUsers" />
+                            <option value="User.AllUsers" />
+                            <option value="WorkFeedbackRequest.AboutTopics" />
+                            <option value="WorkFeedbackRequest.All" />
+                            <option value="WorkFeedbackTemplate.All" />
+                          </set>
+                        </option>
+                        <option name="name" value="ListView" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.Standard_Account_Match_Rule_v1_0" />
+                            <option value="Contact.Standard_Contact_Match_Rule_v1_1" />
+                            <option value="Lead.Standard_Lead_Match_Rule_v1_0" />
+                          </set>
+                        </option>
+                        <option name="name" value="MatchingRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="Contact" />
+                            <option value="Lead" />
+                          </set>
+                        </option>
+                        <option name="name" value="MatchingRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Admin" />
+                            <option value="Analytics Cloud Integration User" />
+                            <option value="Analytics Cloud Security User" />
+                            <option value="Authenticated Website" />
+                            <option value="Chatter External User" />
+                            <option value="Chatter Free User" />
+                            <option value="Chatter Moderator User" />
+                            <option value="ContractManager" />
+                            <option value="Cross Org Data Proxy User" />
+                            <option value="Custom%3A Marketing Profile" />
+                            <option value="Custom%3A Sales Profile" />
+                            <option value="Custom%3A Support Profile" />
+                            <option value="Customer Community Login User" />
+                            <option value="Customer Community Plus Login User" />
+                            <option value="Customer Community Plus User" />
+                            <option value="Customer Community User" />
+                            <option value="Customer Portal Manager Custom" />
+                            <option value="Customer Portal Manager Standard" />
+                            <option value="External Identity User" />
+                            <option value="Force%2Ecom - App Subscription User" />
+                            <option value="Force%2Ecom - Free User" />
+                            <option value="Gold Partner User" />
+                            <option value="High Volume Customer Portal User" />
+                            <option value="HighVolumePortal" />
+                            <option value="Identity User" />
+                            <option value="MarketingProfile" />
+                            <option value="Partner App Subscription User" />
+                            <option value="Partner Community Login User" />
+                            <option value="Partner Community User" />
+                            <option value="PlatformPortal" />
+                            <option value="ReadOnly" />
+                            <option value="Silver Partner User" />
+                            <option value="SolutionManager" />
+                            <option value="Standard" />
+                            <option value="StandardAul" />
+                            <option value="Work%2Ecom Only User" />
+                          </set>
+                        </option>
+                        <option name="name" value="Profile" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Case.LogACall" />
+                            <option value="Case.NewChildCase" />
+                            <option value="CollaborationGroup.NewGroupMember" />
+                            <option value="CollaborationGroup.NewGroupRecord" />
+                            <option value="FeedItem.NewTaskFromFeedItem" />
+                            <option value="LogACall" />
+                            <option value="NewAccount" />
+                            <option value="NewCase" />
+                            <option value="NewContact" />
+                            <option value="NewEvent" />
+                            <option value="NewGroup" />
+                            <option value="NewLead" />
+                            <option value="NewNote" />
+                            <option value="NewOpportunity" />
+                            <option value="NewTask" />
+                            <option value="SendEmail" />
+                            <option value="Task.Defer" />
+                            <option value="Task.Defer_0" />
+                            <option value="Task.EditDescription" />
+                            <option value="Task.EditDescription_0" />
+                            <option value="Task.UpdatePriority" />
+                            <option value="Task.UpdatePriority_0" />
+                            <option value="Task.UpdateStatus" />
+                            <option value="Task.UpdateStatus_0" />
+                          </set>
+                        </option>
+                        <option name="name" value="QuickAction" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.Academic_Program" />
+                            <option value="Account.Administrative" />
+                            <option value="Account.Business_Organization" />
+                            <option value="Account.Educational_Institution" />
+                            <option value="Account.HH_Account" />
+                            <option value="Account.Sports_Organization" />
+                            <option value="Account.University_Department" />
+                            <option value="Course_Enrollment__c.Default" />
+                            <option value="Course_Enrollment__c.Faculty" />
+                            <option value="Course_Enrollment__c.Student" />
+                            <option value="Metric.Completion" />
+                            <option value="Metric.Progress" />
+                          </set>
+                        </option>
+                        <option name="name" value="RecordType" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="ApexDevNet" />
+                          </set>
+                        </option>
+                        <option name="name" value="RemoteSiteSetting" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="unfiled$public" />
+                          </set>
+                        </option>
+                        <option name="name" value="ReportFolder" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="CEO" />
+                            <option value="CFO" />
+                            <option value="COO" />
+                            <option value="ChannelSalesTeam" />
+                            <option value="CustomerSupportInternational" />
+                            <option value="CustomerSupportNorthAmerica" />
+                            <option value="DirectorChannelSales" />
+                            <option value="DirectorDirectSales" />
+                            <option value="EasternSalesTeam" />
+                            <option value="InstallationRepairServices" />
+                            <option value="MarketingTeam" />
+                            <option value="SVPCustomerServiceSupport" />
+                            <option value="SVPHumanResources" />
+                            <option value="SVPSalesMarketing" />
+                            <option value="VPInternationalSales" />
+                            <option value="VPMarketing" />
+                            <option value="VPNorthAmericanSales" />
+                            <option value="WesternSalesTeam" />
+                          </set>
+                        </option>
+                        <option name="name" value="Role" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="Activities" />
+                            <option value="Address" />
+                            <option value="BusinessHours" />
+                            <option value="Case" />
+                            <option value="Company" />
+                            <option value="Contract" />
+                            <option value="Entitlement" />
+                            <option value="FieldService" />
+                            <option value="FileUploadAndDownloadSecurity" />
+                            <option value="Forecasting" />
+                            <option value="Ideas" />
+                            <option value="Knowledge" />
+                            <option value="LiveAgent" />
+                            <option value="Macro" />
+                            <option value="Mobile" />
+                            <option value="Name" />
+                            <option value="OmniChannel" />
+                            <option value="Opportunity" />
+                            <option value="Order" />
+                            <option value="OrgPreference" />
+                            <option value="PathAssistant" />
+                            <option value="PersonalJourney" />
+                            <option value="Product" />
+                            <option value="Quote" />
+                            <option value="Search" />
+                            <option value="Security" />
+                            <option value="SocialCustomerService" />
+                          </set>
+                        </option>
+                        <option name="name" value="Settings" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="Address__c" />
+                            <option value="Affiliation__c" />
+                            <option value="Affl_Mappings__c" />
+                            <option value="Asset" />
+                            <option value="Campaign" />
+                            <option value="Case" />
+                            <option value="Contact" />
+                            <option value="Course_Enrollment__c" />
+                            <option value="Error__c" />
+                            <option value="Hierarchy_Settings__c" />
+                            <option value="Lead" />
+                            <option value="Opportunity" />
+                            <option value="Order" />
+                            <option value="Program_Enrollment__c" />
+                            <option value="Relationship_Auto_Create__c" />
+                            <option value="Relationship_Lookup__c" />
+                            <option value="Relationship__c" />
+                            <option value="Trigger_Handler__c" />
+                            <option value="User" />
+                          </set>
+                        </option>
+                        <option name="name" value="SharingRules" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="AccountContactMultiRoles" />
+                            <option value="AccountContactRole" />
+                            <option value="AccountOwnership" />
+                            <option value="AccountRating" />
+                            <option value="AccountType" />
+                            <option value="AssetStatus" />
+                            <option value="CampaignMemberStatus" />
+                            <option value="CampaignStatus" />
+                            <option value="CampaignType" />
+                            <option value="CaseContactRole" />
+                            <option value="CaseOrigin" />
+                            <option value="CasePriority" />
+                            <option value="CaseReason" />
+                            <option value="CaseStatus" />
+                            <option value="CaseType" />
+                            <option value="ContactRole" />
+                            <option value="ContractContactRole" />
+                            <option value="ContractStatus" />
+                            <option value="EntitlementType" />
+                            <option value="EventSubject" />
+                            <option value="EventType" />
+                            <option value="FiscalYearPeriodName" />
+                            <option value="FiscalYearPeriodPrefix" />
+                            <option value="FiscalYearQuarterName" />
+                            <option value="FiscalYearQuarterPrefix" />
+                            <option value="IdeaMultiCategory" />
+                            <option value="IdeaStatus" />
+                            <option value="IdeaThemeStatus" />
+                            <option value="Industry" />
+                            <option value="LeadSource" />
+                            <option value="LeadStatus" />
+                            <option value="OpportunityCompetitor" />
+                            <option value="OpportunityStage" />
+                            <option value="OpportunityType" />
+                            <option value="OrderType" />
+                            <option value="PartnerRole" />
+                            <option value="Product2Family" />
+                            <option value="QuickTextCategory" />
+                            <option value="QuickTextChannel" />
+                            <option value="QuoteStatus" />
+                            <option value="RoleInTerritory2" />
+                            <option value="SalesTeamRole" />
+                            <option value="Salutation" />
+                            <option value="ServiceContractApprovalStatus" />
+                            <option value="SocialPostClassification" />
+                            <option value="SocialPostEngagementLevel" />
+                            <option value="SocialPostReviewedStatus" />
+                            <option value="SolutionStatus" />
+                            <option value="TaskPriority" />
+                            <option value="TaskStatus" />
+                            <option value="TaskSubject" />
+                            <option value="TaskType" />
+                            <option value="WorkOrderLineItemStatus" />
+                            <option value="WorkOrderPriority" />
+                            <option value="WorkOrderStatus" />
+                          </set>
+                        </option>
+                        <option name="name" value="StandardValueSet" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account" />
+                            <option value="Address__c" />
+                            <option value="Affiliation__c" />
+                            <option value="Asset" />
+                            <option value="Campaign" />
+                            <option value="Case" />
+                            <option value="Contact" />
+                            <option value="ContentDocument" />
+                            <option value="Contract" />
+                            <option value="Course_Enrollment__c" />
+                            <option value="Course_Offering__c" />
+                            <option value="Course__c" />
+                            <option value="Error__c" />
+                            <option value="Event" />
+                            <option value="Lead" />
+                            <option value="Opportunity" />
+                            <option value="Order" />
+                            <option value="Program_Enrollment__c" />
+                            <option value="Relationship__c" />
+                            <option value="Solution" />
+                            <option value="Task" />
+                            <option value="Term__c" />
+                            <option value="Trigger_Handler__c" />
+                          </set>
+                        </option>
+                        <option name="name" value="TopicsForObjects" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Relationship__c.Related_Contact_Do_Not_Change" />
+                          </set>
+                        </option>
+                        <option name="name" value="ValidationRule" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="Account.Billing" />
+                            <option value="Campaign.ViewCampaignInfluenceReport" />
+                            <option value="Case.UpsellCrosssellOpportunity" />
+                            <option value="Opportunity.DeliveryStatus" />
+                          </set>
+                        </option>
+                        <option name="name" value="WebLink" />
+                      </MetadataType>
+                    </set>
+                  </option>
+                </MetadataContents>
+              </value>
+            </entry>
+          </map>
+        </option>
+      </ProjectWorkspaceSettings>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -56,7 +1578,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="1920" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,21 +1600,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="heda_wind" type="58d84e3e:PackageViewProjectNode" />
+              <item name="common-libraries" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="heda_wind" type="58d84e3e:PackageViewProjectNode" />
+              <item name="common-libraries" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="heda_wind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hedap-fork" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v7.9.0/bin/node" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="IlluminatedCloudApplicationConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.110497236" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/../common-libraries" />
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -106,7 +1661,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Bash.merge-with-HEDAP-foundation.sh">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -125,6 +1680,16 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="merge-with-HEDAP-foundation.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge-with-HEDAP-foundation.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="hedap-fork" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -187,6 +1752,36 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <configuration name="allTests" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="true" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="unmanaged-heda-dev-ed.lightning.force.com" />
+      <option name="contextConfiguration" value="false" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="true" />
+      <option name="moduleToTestClassNames">
+        <map />
+      </option>
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map />
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Apex Unit Tests.allTests" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.merge-with-HEDAP-foundation.sh" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Bash.merge-with-HEDAP-foundation.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -204,12 +1799,36 @@
       <workItem from="1518729551077" duration="69000" />
       <workItem from="1518729622142" duration="972000" />
       <workItem from="1518730765129" duration="362000" />
-      <workItem from="1518885609714" duration="518000" />
+      <workItem from="1518885609714" duration="3250000" />
+      <workItem from="1518889044402" duration="1379000" />
+      <workItem from="1518891586595" duration="35000" />
+      <workItem from="1519090948629" duration="215000" />
+      <workItem from="1519091181077" duration="45000" />
+      <workItem from="1519091239666" duration="213000" />
+      <workItem from="1519091469566" duration="208000" />
+      <workItem from="1519679367215" duration="58000" />
+      <workItem from="1519679444709" duration="1242000" />
+      <workItem from="1519937419543" duration="1227000" />
+      <workItem from="1520023624116" duration="49000" />
+      <workItem from="1520023687392" duration="559000" />
+      <workItem from="1520024261657" duration="380000" />
+      <workItem from="1520285368035" duration="89000" />
+      <workItem from="1520285471754" duration="571000" />
+      <workItem from="1521665836804" duration="1484000" />
+      <workItem from="1521748304628" duration="247000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="allTests - 2018.03.21 at 17h 05m 55s.xml">
+      <configuration name="allTests" configurationId="com.illuminatedcloud.intellij" />
+    </history-entry>
+    <history-entry file="allTests - 2018.03.22 at 15h 54m 34s.xml">
+      <configuration name="allTests" configurationId="com.illuminatedcloud.intellij" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1921000" />
+    <option name="totallyTimeSpent" value="12654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -220,15 +1839,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48390558" sideWeight="0.31458333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48390558" sideWeight="0.68541664" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33773378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24236874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -236,16 +1855,50 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Illuminated Cloud" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48390558" sideWeight="0.31458333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48390558" sideWeight="0.68541664" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -258,6 +1911,215 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="65" lean-forward="true" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Csv.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="146" column="47" lean-forward="false" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" lean-forward="false" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -281,10 +2143,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/~/devHelp/salesforce/hedap-fork/hedap-fork.iml" />
+    <entry file="file://$PROJECT_DIR$/../common-libraries/SoqlBuilder/SoqlBuilder.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="146" column="47" lean-forward="false" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/UTIL_Describe_TEST.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Csv.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CON_Simple_Test.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/merge-with-HEDAP-foundation.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="78" lean-forward="true" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
           <folding />
         </state>
       </provider>
