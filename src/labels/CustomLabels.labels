@@ -153,6 +153,14 @@
         <value>Other</value>
     </labels>
     <labels>
+        <fullName>adapterException</fullName>
+        <categories>TDTM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Throw exception to external call</shortDescription>
+        <value>Invalid call. This function is reserved for Salesforce use.</value>
+    </labels>
+    <labels>
         <fullName>addrHhAdmAccountOnly</fullName>
         <categories>Address Management</categories>
         <language>en_US</language>
@@ -295,6 +303,13 @@
         <protected>true</protected>
         <shortDescription>firstNameLastNameHH</shortDescription>
         <value>{!{!FirstName}} {!LastName} Household</value>
+    </labels>
+    <labels>
+        <fullName>giftProcessingConfigException</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Gift Processing configuration error</shortDescription>
+        <value>You are trying to access Gift Processing without the required configuration information. Contact your administrator for help.</value>
     </labels>
     <labels>
         <fullName>hhAccNameFormat</fullName>
